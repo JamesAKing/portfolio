@@ -6,3 +6,12 @@
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.App {
+  display: flex;
+  
+  &__main-nav {
+    width: 75px;
+    height: 100vh;
+  }
+}
