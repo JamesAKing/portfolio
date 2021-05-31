@@ -17,7 +17,7 @@ function App() {
         <div className="App__main-nav">
           <MainNavbar />
         </div>
-        <div>
+        <div className="App__content">
           <header>
             <h1>James King Portfolio</h1>
           </header>

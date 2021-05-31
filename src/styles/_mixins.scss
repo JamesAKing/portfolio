@@ -1,0 +1,28 @@
+@use "./variables" as *;
+
+// RESP DESIGN
+@mixin mobile {
+    @media (min-width: $screen-mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $screen-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $screen-desktop) {
+        @content;
+    }
+}
+
+// PAGE DEFAULTS
+@mixin page-default {
+    width: 100%;
+    min-width: $screen-mobile;
+    min-height: 100vh;
+    display: flex;
+}
