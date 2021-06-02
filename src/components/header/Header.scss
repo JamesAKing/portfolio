@@ -4,16 +4,10 @@
 .header {
     @include container-default;
     height: 150px;
-    align-items: center;
     background-color: $color-background;
-
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    @include tablet {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__content {
         @include content-default;

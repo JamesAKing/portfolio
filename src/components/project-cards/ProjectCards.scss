@@ -1,0 +1,5 @@
+@use "../../styles/mixins" as *;
+
+.project-cards {
+    @include content-default;
+}

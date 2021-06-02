@@ -21,15 +21,14 @@
 
 // PAGE DEFAULTS
 @mixin page-default {
+    // USE ON PAGE COMPONENTS ONLY
     width: 100%;
     min-width: $screen-mobile;
     min-height: calc(100vh - 150px);
 }
 
 @mixin container-default {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
+    // USE FOR CONTENT WITHIN PAGE COMPONENTS
 
     @include mobile {
         padding-left: $pg-padding-mobile;

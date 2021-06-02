@@ -6,6 +6,8 @@
     height: calc(100vh - 150px);
     min-height: 400px;
     background-color: $color-background;
+    display: flex;
+    justify-content: center;
 
     &__content {
         @include content-default;
