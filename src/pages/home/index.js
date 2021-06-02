@@ -1,11 +1,12 @@
-import React from 'react';
+import './index.scss';
 
 function HomePage() {
+
     return (
-        <div>
-            HOME
-        </div>
+        <main>
+        </main>
     );
+
 }
 
 export default HomePage;
