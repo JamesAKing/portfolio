@@ -1,0 +1,14 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.logo {
+
+    :hover {
+        background-color: $color-text-alt;
+    }
+
+    &__link {
+        color: $color-text;
+        text-decoration: none;
+    }
+}

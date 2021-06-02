@@ -1,5 +1,7 @@
 import './HeaderNav.scss';
 import { NavLink } from 'react-router-dom';
+// import GithubIcon from '../../assets/icons/github.svg';
+// import LinkedInIcon from '../../assets/icons/linkedin.svg';
 
 function HeaderNav() {
 

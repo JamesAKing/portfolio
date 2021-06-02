@@ -5,7 +5,7 @@
     @include container-default;
     height: 150px;
     align-items: center;
-    background-color: #FFD400;
+    background-color: $color-background;
 
     padding-left: 1rem;
     padding-right: 1rem;
@@ -24,7 +24,7 @@
     }
 
     &__logo-link {
-        color: black;
+        color: $color-text;
         text-decoration: none;
     }
 }
