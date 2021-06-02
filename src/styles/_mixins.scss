@@ -47,6 +47,10 @@
     }
 }
 
+@mixin container-height-default {
+    min-height: calc(100vh - 150px);
+}
+
 @mixin content-default {
     width: 100%;
 
