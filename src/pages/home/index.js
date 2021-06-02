@@ -1,9 +1,11 @@
 import './index.scss';
+import Hero from '../../components/hero/Hero';
 
 function HomePage() {
 
     return (
-        <main>
+        <main className="home-pg">
+            <Hero />
         </main>
     );
 

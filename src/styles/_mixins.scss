@@ -23,7 +23,7 @@
 @mixin page-default {
     width: 100%;
     min-width: $screen-mobile;
-    min-height: 100vh;
+    min-height: calc(100vh - 150px);
 }
 
 @mixin container-default {
@@ -32,18 +32,18 @@
     justify-content: center;
 
     @include mobile {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: $pg-padding-mobile;
+        padding-right: $pg-padding-mobile;
     } 
 
     @include tablet {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: $pg-padding-tablet;
+        padding-right: $pg-padding-tablet;
     }
 
     @include desktop {
-        padding-left: auto;
-        padding-right: auto;
+        padding-left: $pg-padding-desktop;
+        padding-right: $pg-padding-desktop;
     }
 }
 
