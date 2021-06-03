@@ -1,18 +1,16 @@
+@use "../../styles/variables" as *;
+
 .skills-form {
-
     height: 3rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-
-
     &__label {
         width: 200px;
-        padding: 2rem 1rem;
         height: inherit;
-
+        padding: 2rem 1rem;
+        border: 2px solid $color-text;
         flex-grow: 1;
         display: flex;
         justify-content: center;
@@ -28,7 +26,11 @@
             border-bottom-right-radius: 5px;
         }
 
-        border: 2px solid blue;
+        // border: 2px solid blue;
+
+        &--selected {
+            box-shadow: inset 0 0 10px black;
+        }
 
     }
 
