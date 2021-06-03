@@ -1,0 +1,14 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.skills {
+    @include container-default;
+    @include container-height-default;
+    background-color: $color-background;
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

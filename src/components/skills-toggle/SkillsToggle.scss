@@ -1,0 +1,38 @@
+.skills-form {
+
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__label {
+        width: 200px;
+        padding: 2rem 1rem;
+        height: inherit;
+
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        border: 2px solid blue;
+
+    }
+
+    &__radio {
+        opacity: 0;
+    }
+}

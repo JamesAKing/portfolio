@@ -6,7 +6,7 @@ function ProjectsHome() {
     return (
         <section className="projects-home">
             <SectionHeader heading="PROJECTS" alt={true}/>
-                <p className="projects-home__text">WONDERING WHAT I DO WITH MY TIME?</p>
+            <p className="projects-home__text">WONDERING WHAT I DO WITH MY TIME?</p>
             <ProjectCards />
         </section>
     );
