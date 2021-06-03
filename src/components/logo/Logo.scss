@@ -10,5 +10,9 @@
     &__link {
         color: $color-text;
         text-decoration: none;
+
+        &--alt {
+            color: $color-background;
+        }
     }
 }

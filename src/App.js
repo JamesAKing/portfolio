@@ -7,6 +7,7 @@ import HomePage from './pages/home';
 import ProjectsPage from './pages/projects';
 import ProjectPage from './pages/project';
 import ResumePage from './pages/resume';
+import Footer from './components/footer/Footer';
 import { homeURL, aboutURL, resumeURL, projectsURL, contactMeURL } from './utilities/URLS';
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path={`${projectsURL}/:projectID`} component={ProjectPage} />
           <Route path={contactMeURL} component={ContactMePage} />
         </Switch>
+
+        <Footer />
       </BrowserRouter>
       
 

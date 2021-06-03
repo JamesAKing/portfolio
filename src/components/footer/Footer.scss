@@ -1,0 +1,17 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+
+.footer {
+    @include container-default;
+    height: 150px;
+    padding-top: 6.25rem;
+    background-color: $color-text;
+
+    display: flex;
+    justify-content: center;
+
+    &__content {
+        @include content-default;
+    }
+}
