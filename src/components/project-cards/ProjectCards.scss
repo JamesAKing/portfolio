@@ -2,4 +2,12 @@
 
 .project-cards {
     @include content-default;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    @include desktop {
+        padding-bottom: 4em;
+    }
 }

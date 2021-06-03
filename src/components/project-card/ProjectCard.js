@@ -8,9 +8,6 @@ function ProjectCard() {
             <Link className="project-card__link" to="/">
                 cuby-Fi
             </Link>
-            <div className="project-card__overlay">
-                hello
-            </div>
         </li>
     );
 

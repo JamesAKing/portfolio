@@ -5,6 +5,8 @@ function ProjectCards() {
     return (
         <ul className="project-cards">
             <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
         </ul>
     );
 }

@@ -12,4 +12,14 @@
         flex-direction: column;
         align-items: center;
     }
+
+    &__text {
+        text-align: center;
+        color: $color-background-alt;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 2.5rem;
+        }
+    }
 }
