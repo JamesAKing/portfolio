@@ -1,6 +1,8 @@
+@use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
 .hidden-menu {
+    @include container-default;
     width: 100%;
     height: 100vh;
     min-height: 568px;
@@ -11,6 +13,9 @@
     z-index: 1;
 
     &__btn {
+        position: absolute;
+        top: 32px;
+        right: 0;
         background-color: transparent;
         width: 50px;
         height: 50px;
@@ -18,8 +23,55 @@
         font-weight: 700;
         border: 5px solid $color-text;
         border-radius: 50%;
+        margin: $pg-padding-mobile;
 
-        // TEMP
-        margin: 1rem;
+        @include tablet {
+            top: 28px;
+            margin: $pg-padding-tablet;
+        }
+    }
+
+    &__nav {
+        @include content-default;
+        height: calc(100vh - 115px);
+        margin-top: 115px;
+
+    }
+
+    &__items {
+        text-align: end;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__item {
+        width: 50%;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            width: 25%;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $color-text;
+        text-decoration: none;
+        padding: 1.5rem 0;
+        border-left: 3px solid $color-background;
+        border-bottom: 3px solid $color-background;
+
+        &--active {
+            padding-right: 1rem;
+            border-left: 3px solid $color-text;
+            border-bottom: 3px solid $color-text;
+
+            &::after {
+                content: "-";
+                margin-left: 0.5rem;
+            }
+        }
     }
 }
