@@ -1,5 +1,6 @@
 import './HeaderNav.scss';
 import { NavLink } from 'react-router-dom';
+import { homeURL, projectsURL, aboutURL, contactMeURL } from '../../utilities/URLS';
 // import GithubIcon from '../../assets/icons/github.svg';
 // import LinkedInIcon from '../../assets/icons/linkedin.svg';
 
@@ -9,13 +10,16 @@ function HeaderNav() {
         <nav className="header-nav">
             <ul className="header-nav__items">
                 <li className="header-nav__item">
-                    <NavLink exact to="/" className="header-nav__link" activeClassName="header-nav__link--active">HOME</NavLink>
+                    <NavLink exact to={homeURL} className="header-nav__link" activeClassName="header-nav__link--active">HOME</NavLink>
                 </li>
                 <li className="header-nav__item">
-                    <NavLink exact to="/link2" className="header-nav__link" activeClassName="header-nav__link--active">LINK 2</NavLink>
+                    <NavLink exact to={projectsURL} className="header-nav__link" activeClassName="header-nav__link--active">PROJECTS</NavLink>
                 </li>
                 <li className="header-nav__item">
-                    <NavLink exact to="/link3" className="header-nav__link" activeClassName="header-nav__link--active">LINK 3</NavLink>
+                    <NavLink exact to={aboutURL} className="header-nav__link" activeClassName="header-nav__link--active">ABOUT ME</NavLink>
+                </li>
+                <li className="header-nav__item">
+                    <NavLink exact to={contactMeURL} className="header-nav__link" activeClassName="header-nav__link--active">CONTACT ME</NavLink>
                 </li>
             </ul>
         </nav>
