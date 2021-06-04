@@ -5,6 +5,7 @@
     @include container-default;
     @include container-height-default;
     background-color: $color-background;
+    padding-bottom: 2rem;
 
     @include desktop {
         display: flex;
