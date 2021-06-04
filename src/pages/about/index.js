@@ -1,11 +1,11 @@
-import React from 'react';
+import './index.scss';
+import HeroAbout from '../../components/hero-about/HeroAbout';
 
-function AboutPage(props) {
+function AboutPage() {
     return (
-        <div>
-            TEST
-            
-        </div>
+        <main className="about-pg">
+            <HeroAbout />
+        </main>
     );
 }
 

@@ -1,0 +1,26 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.about-hero {
+    @include content-default;
+
+    @include tablet {
+        display: flex;
+    }
+
+    &__column {
+        width: 100%;
+        height: calc((100vh - 150px) / 2);
+        min-height: 175px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+
+        @include tablet {
+            height: calc(100vh - 150px);
+            min-height: 350px;
+        }
+    }
+}

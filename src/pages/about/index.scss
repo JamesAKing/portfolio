@@ -1,0 +1,10 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.about-pg {
+    @include container-default;
+    @include container-height-default;
+    background-color: $color-background;
+    display: flex;
+    justify-content: center;
+}

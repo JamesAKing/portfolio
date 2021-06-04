@@ -5,7 +5,7 @@ import HiddenMenu from './HiddenMenu';
 
 function HamburgerMenu() {
 
-    const [ menuActive, setMenuActive ] = useState(true);
+    const [ menuActive, setMenuActive ] = useState(false);
 
     return (
         <div className="hamburger-menu">
