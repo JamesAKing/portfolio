@@ -1,3 +1,11 @@
+@use "../../styles/mixins" as *;
+
 .skills-list {
+    width: 100%;
     list-style: none;
+    
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

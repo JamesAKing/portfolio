@@ -14,9 +14,12 @@ function Skills() {
 
     return (
         <section className="skills">
-            <SectionHeader heading="MY SKILLS" />
-            <SkillsToggle onRadioSelect={onRadioSelect} selectedSkill={selectedSkill}/>
-            {selectedSkill === 'frontend' ? <SkillsList listName="Front End Skills"/> : <SkillsList listName="Back End Skills"/>}
+            <div className="skills__content">
+                <SectionHeader heading="MY SKILLS" />
+                <SkillsToggle onRadioSelect={onRadioSelect} selectedSkill={selectedSkill}/>
+                {selectedSkill === 'frontend' ? <SkillsList listName="Front End Skills"/> : <SkillsList listName="Back End Skills"/>}
+            </div>
+            
 
 
         </section>

@@ -7,6 +7,8 @@ function SkillsList({ listName }) {
             <h3>{listName}</h3>
             <ul className="skills-list">
                 <Skill />
+                <Skill />
+                <Skill />
             </ul>
         </>
 
