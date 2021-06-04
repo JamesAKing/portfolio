@@ -4,7 +4,6 @@ function Skill({ skill }) {
     return (
         <li className="skill">
             <p className="skill__name">{skill.toUpperCase()}</p>
-            {/* Swap to image */}
             <div className="skill__graphics">
                 <div className="skill__line"></div>
                 <div className="skill__hexagons">
