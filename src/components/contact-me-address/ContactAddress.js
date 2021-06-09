@@ -5,7 +5,7 @@ function ContactAddress({ addressIcon, addressURL, addressText }) {
 
     return (
         <address className="address"> 
-            <img className="icon" src={addressIcon} alt={addressText} />
+            <img className="icon address__icon" src={addressIcon} alt={addressText} />
             <a className="address__url" href={addressURL}>{addressText}</a>
             <div className="address__hexagon-graphic">
                 <HexagonGraphic />
