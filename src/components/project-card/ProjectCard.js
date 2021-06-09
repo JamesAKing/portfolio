@@ -10,11 +10,11 @@ function ProjectCard() {
             <div className="project-card__links">
                 <a className="project-card__link" href="#">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
-                    <p>Check out my Code at GitHub</p>
+                    <p className>Check out my Code at GitHub</p>
                 </a>
                 <a className="project-card__link" href="#">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
-                    <p>Check out my Code at GitHub</p>
+                    <p className>Check out my Code at GitHub</p>
                 </a>
             </div>
         </li>
