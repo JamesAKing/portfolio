@@ -1,0 +1,23 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.contact-pg {
+    @include container-default; 
+    @include container-height-default;
+    display: flex;
+    justify-content: center;
+    background-color: $color-background;
+
+    &__content {
+        @include content-default;
+        min-height: 500px;
+        padding-bottom: 2rem;
+    }
+}
+
+.address {
+    padding: 2rem 0;
+
+    &__email {
+    }
+}
