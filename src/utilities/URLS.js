@@ -5,8 +5,6 @@ export const aboutURL = `${defaultURL}/about-me`;
 export const resumeURL = `${defaultURL}/resume`;
 export const projectsURL = `${defaultURL}/projects`;
 export const contactMeURL = `${defaultURL}/contact-me`;
-// export const pipelineURL = `${defaultURL}/pipeline`;
-
 
 export const emailAddress = "james_andrew_king@hotmail.co.uk";
 export const mailtoEmailAddress = `mailto:${emailAddress}?subject=Get%20In%20Touch`;

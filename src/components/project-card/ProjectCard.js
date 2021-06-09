@@ -13,10 +13,11 @@ function ProjectCard({ projectName, websiteURL , githubURL }) {
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
                     <p className>View Site</p>
                 </a>}
+                {githubURL &&
                 <a className="project-card__link" href={githubURL} target="_blank">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
                     <p className>View Code @ GitHub</p>
-                </a>
+                </a>}
             </div>
         </li>
 
