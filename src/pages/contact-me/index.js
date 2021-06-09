@@ -1,22 +1,32 @@
 import './index.scss';
+import { emailAddress, myGithubURL, myLinkedinURL } from '../../utilities/URLS';
 import SectionHeader from '../../components/section-header/SectionHeader';
-import ContacrtMeForm from '../../components/contact-me-form/ContactMeForm';
+// import ContacrtMeForm from '../../components/contact-me-form/ContactMeForm';
+import ContactAddress from "../../components/contact-me-address/ContactAddress";
 
 function ContactMePage() {
+
     return (
         <main className="contact-pg">
             <section className="contact-pg__content">
                 <SectionHeader heading="get in touch!"/>
-                <ContacrtMeForm />
-                {/* <address className="address"> 
-                    <span></span>
-                    <a className="address__email" href="mailto:james_andrew_king@hotmail.co.uk">james_andrew_king@hotmail.co.uk</a>
-                </address> */}
-
+                {/* <ContacrtMeForm /> */}
+                <ContactAddress 
+                    addressTitle="EMAIL"
+                    addressURL={`mailto:${emailAddress}`}
+                    addressText={emailAddress}
+                />
+                <ContactAddress 
+                    addressTitle="GITHUB"
+                    addressURL={myGithubURL}
+                    addressText={myGithubURL}
+                />
+                <ContactAddress 
+                    addressTitle="LINKEDIN"
+                    addressURL={myLinkedinURL}
+                    addressText={myLinkedinURL}
+                />
             </section>
-            
-            
-            
         </main>
     );
 }

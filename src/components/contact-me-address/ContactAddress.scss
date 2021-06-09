@@ -1,0 +1,31 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.address {
+    padding: 2rem 0;
+    font-style: normal;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__url {
+        color: $color-text;
+        text-decoration: none;
+
+        &:hover, &:focus {
+            border-bottom: 2px solid $color-text;
+        }
+    }
+}
