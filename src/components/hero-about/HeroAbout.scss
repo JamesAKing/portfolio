@@ -3,22 +3,25 @@
 
 .about-hero {
     @include content-default;
+    padding-bottom: 1.5rem;
 
     @include tablet {
         display: flex;
+        justify-content: space-between;
     }
 
     &__column {
         width: 100%;
+        flex-grow: 1;
         height: calc((100vh - 150px) / 2);
         min-height: 175px;
-
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid red;
 
         @include tablet {
+            width: 50%;
             height: calc(100vh - 150px);
             min-height: 350px;
         }

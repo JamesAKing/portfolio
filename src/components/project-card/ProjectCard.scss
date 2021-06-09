@@ -1,47 +1,107 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
+$card-animation-distance-mobile: 40px;
+$card-animation-distance-tablet: 55px;
+
 .project-card {
-    width: 100%;
-    height: 200px;
-    background-color: $color-background-alt;
     position: relative;
-    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-color: $color-background-alt;
 
-    @include desktop {
-        width: 250px;
-        height: 175px;
+    &::before, &::after {
+        content: "";
+        @include absolute-fill;
+        transition: transform 250ms ease-in-out 125ms;
     }
 
-    &::after {
-        // Add additional info on project (link to live site and github for code)
-        content: "Additional Info on project";
+    &:before {
+        transform: scale(0, 1);
+    }
+
+    &:after {
+        transform: scale(1, 0);
+    }
+    
+    &:hover::before, &:focus::before {
+        transform: scale(1, 1);
+        top: $card-animation-distance-mobile;
+        bottom: $card-animation-distance-mobile;
+        border-top: 1px solid $color-background;
+        border-bottom: 1px solid $color-background;
+
+        @include tablet {
+            top: $card-animation-distance-tablet;
+            bottom: $card-animation-distance-tablet;
+        }
+    }
+
+    &:hover::after, &:focus::after {
+        transform: scale(1, 1);
+        left: $card-animation-distance-mobile;
+        right: $card-animation-distance-mobile;
+        border-left: 1px solid $color-background;
+        border-right: 1px solid $color-background;
+
+        @include tablet {
+            left: $card-animation-distance-tablet;
+            right: $card-animation-distance-tablet;
+        }
+    }
+
+    &:hover .project-card__title,
+    &:focus .project-card__title {
+        height: $card-animation-distance-mobile;
+
+        @include tablet {
+            height: $card-animation-distance-tablet;
+        }
+    }
+
+    &:hover .project-card__links,
+    &:focus .project-card__links {
+        transform: scale(1, 1);
+    }
+
+    &__title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height ease-out 250ms;
+    }
+
+    &__links {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-    }
+        top: $card-animation-distance-mobile;
+        bottom: $card-animation-distance-mobile;
+        left: $card-animation-distance-mobile;
+        right: $card-animation-distance-mobile;
+        transform: scale(1, 0);
+        transition: transform 250ms ease-in-out 125ms;
+        display: flex;
 
-    &:hover, &:focus {
-        border-bottom: 4px solid $color-background;
-
-        &::after {
-            opacity: 1;
+        @include tablet {
+            top: $card-animation-distance-tablet;
+            bottom: $card-animation-distance-tablet;
+            left: $card-animation-distance-tablet;
+            right: $card-animation-distance-tablet;
         }
     }
 
     &__link {
-        display: block;
-        width: inherit;
-        height: inherit;
+        width: 100%;
+        height: 100%;;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: $color-text-alt;
-        text-decoration: none;
+        text-align: center;
     }
 
-
+    &__icon {
+        width: 75px;
+    }
 }
