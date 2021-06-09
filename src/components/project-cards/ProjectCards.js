@@ -22,7 +22,7 @@ function ProjectCards() {
             />
         </ul>
     );
-
+    
 }
 
 export default ProjectCards;

@@ -1,6 +1,7 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
+$card-animation-border-gap: 15px;
 $card-animation-spacing-mobile: 40px;
 $card-animation-spacing-tablet: 55px;
 
@@ -11,7 +12,8 @@ $card-animation-spacing-tablet: 55px;
     background-color: $color-background-alt;
 
     @include tablet {
-        width: calc(50% - 25px);
+        width: calc((100% - 25px) / 2);
+        height: 350px;
     }
 
     @include desktop {
@@ -21,7 +23,11 @@ $card-animation-spacing-tablet: 55px;
 
     &::before, &::after {
         content: "";
-        @include absolute-fill;
+        position: absolute;
+        top: $card-animation-border-gap;
+        right: $card-animation-border-gap;
+        bottom: $card-animation-border-gap;
+        left: $card-animation-border-gap;
         transition: transform 250ms ease-in-out 125ms;
     }
 
@@ -115,6 +121,7 @@ $card-animation-spacing-tablet: 55px;
         transition: 
             border 150ms,
             color 150ms;
+            cursor: pointer;
 
         @include tablet {
             padding: 0.75rem;
@@ -122,7 +129,6 @@ $card-animation-spacing-tablet: 55px;
 
         &:hover, &:focus {
             color: $color-background;
-            border: 2px solid $color-background;
         }
     }
 
