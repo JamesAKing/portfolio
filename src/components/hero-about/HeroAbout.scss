@@ -1,6 +1,9 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
+$profile-pic-size-mobile: 200px;
+$profile-pic-size-tablet: 300px;
+
 .about-hero {
     @include content-default;
     padding-bottom: 1.5rem;
@@ -18,12 +21,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
 
         @include tablet {
             width: 50%;
             height: calc(100vh - 150px);
             min-height: 350px;
+        }
+    }
+
+    &__profile-pic {
+        width: $profile-pic-size-mobile;
+        height: $profile-pic-size-mobile;
+        padding: 0.5rem;
+        border: 2px solid $color-text;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: -50px 0px;
+        transform: rotate(270deg);
+
+        @include tablet {
+            width: $profile-pic-size-tablet;
+            height: $profile-pic-size-tablet;
         }
     }
 }
