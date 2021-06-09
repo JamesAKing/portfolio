@@ -13,6 +13,12 @@
 
     &__content {
         @include content-default;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &__logo {

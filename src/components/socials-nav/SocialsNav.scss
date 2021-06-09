@@ -2,18 +2,15 @@
 
 .socials {
     @include content-default;
-
-    border: 1px solid red;
+    padding-bottom: 2rem;
 
     &__items {
         display: flex;
         justify-content: space-between;
 
         @include tablet {
-            justify-content: flex-start;
+            justify-content: flex-end;
         }
-
-        border: 1px solid yellow;
     }
 
     &__item {
@@ -21,9 +18,5 @@
         @include tablet {
             margin-right: 0.75rem;         
         }
-
-    }
-
-    &__icon {
     }
 }

@@ -1,25 +1,26 @@
 import './SocialsNav.scss';
-import { myGithubURL, myLinkedinURL } from '../../utilities/URLS';
+import { mailtoEmailAddress, myGithubURL, myLinkedinURL } from '../../utilities/URLS';
 import GithubIcon from '../../assets/icons/github.svg';
 import linkedInIcon from '../../assets/icons/linkedin.svg';
+import EmailIcon from '../../assets/icons/email.svg';
 
 function SocialsNav() {
     return (
         <nav className="socials">
             <ul className="socials__items">
                 <li className="socials__item">
-                    <a href={myGithubURL}>
-                        <img className="icon socials__icon" src={GithubIcon} alt="github link" />
+                    <a href={myGithubURL} target="_blank">
+                        <img className="icon" src={GithubIcon} alt="github link" />
                     </a>
                 </li>
-                <li className="socials__item">
+                <li className="socials__item" target="_blank">
                     <a href={myLinkedinURL}>
-                        <img className="icon socials__icon" src={linkedInIcon} alt="linkedin link" />
+                        <img className="icon" src={linkedInIcon} alt="linkedin link" />
                     </a>
                 </li>
                 <li className="socials__item">
-                    <a href="#">
-                        <img className="icon socials__icon" src="#" alt="third link" />
+                    <a href={mailtoEmailAddress} target="_blank">
+                        <img className="icon" src={EmailIcon} alt="email" />
                     </a>
                 </li>
             </ul>
