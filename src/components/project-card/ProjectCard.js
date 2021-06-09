@@ -2,19 +2,20 @@ import './ProjectCard.scss';
 // import { Link } from 'react-router-dom';
 import GithubIcon from '../../assets/icons/github.svg'
 
-function ProjectCard() {
+function ProjectCard({ projectName, websiteURL , githubURL }) {
 
     return (
         <li className="project-card">
-            <h3 className="project-card__title">Project</h3>
+            <h3 className="project-card__title">{projectName}</h3>
             <div className="project-card__links">
-                <a className="project-card__link" href="#">
+                {websiteURL && 
+                <a className="project-card__link" href={websiteURL} target="_blank">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
-                    <p className>Check out my Code at GitHub</p>
-                </a>
-                <a className="project-card__link" href="#">
+                    <p className>View Site</p>
+                </a>}
+                <a className="project-card__link" href={githubURL} target="_blank">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
-                    <p className>Check out my Code at GitHub</p>
+                    <p className>View Code @ GitHub</p>
                 </a>
             </div>
         </li>

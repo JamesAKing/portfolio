@@ -1,7 +1,7 @@
 @use "../../styles/mixins" as *;
 
 .project-cards {
-    @include content-default;
+    width: 100%;
     padding-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
