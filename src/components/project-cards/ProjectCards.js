@@ -2,25 +2,22 @@ import './ProjectCards.scss';
 import { myGithubURL } from '../../utilities/URLS';
 import ProjectCard from '../project-card/ProjectCard';
 
+import { projectsArr } from '../../assets/data/projects';
+
 function ProjectCards() {
 
     return (
         <ul className="project-cards">
-            <ProjectCard 
-                projectName="cuby-Fi" 
-                // websiteURL={null} 
-                githubURL={`${myGithubURL}/cuby-Fi`}
-            />
-            <ProjectCard 
-                projectName="Climate Mind" 
-                websiteURL={"https://climatemind.org/"} 
-                // githubURL={null}
-            />
-            <ProjectCard 
-                projectName="Portfolio" 
-                // websiteURL={null} 
-                githubURL={`${myGithubURL}/portfolio`}
-            />
+            {projectsArr.map((project, i) => {
+                return (
+                    <ProjectCard
+                        key={i}
+                        projectTitle={project.projectTitle}
+                        githubURL={project.githubURL}
+                        websiteURL={project.websiteURL}
+                    />
+                )
+            })}
         </ul>
     );
     
