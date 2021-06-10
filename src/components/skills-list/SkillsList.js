@@ -7,9 +7,6 @@ function SkillsList({ listName, skillsArr }) {
         <>
             <h3>{listName}</h3>
             <ul className="skills-list">
-                {/* <Skill />
-                <Skill />
-                <Skill /> */}
                 {skillsArr.map((skill, i) => <Skill key={i} skill={skill}/>)}
             </ul>
         </>

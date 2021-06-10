@@ -5,7 +5,6 @@
 .header-nav {
     display: none;
     
-
     @include desktop {
         display: flex;
     }
@@ -20,12 +19,18 @@
     }
 
     &__link {
+        position: relative;
         color: $color-text;
         text-decoration: none;
         padding: 1.5rem .5rem;
 
         &:hover {
             background-color: $color-text-alt;
+        }
+
+        &::before, &::after {
+            @include absolute-fill;
+            content: "";
         }
 
         &--active {

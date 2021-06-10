@@ -8,9 +8,7 @@ function Skills() {
 
     const [ selectedSkill, setSelectedSkill ] = useState('frontend');
 
-    const onRadioSelect = e => {
-        setSelectedSkill(e.target.value);
-    };
+    const onRadioSelect = e => setSelectedSkill(e.target.value);
 
     const skillsArrFrontend = ["HTML", "CSS", "JavaScript", "Tensorflow.js", "React.js", "Redux"];
     const skillsArrBackend = ["Node.js", "Express.js", "Python"];
@@ -22,9 +20,6 @@ function Skills() {
                 <SkillsToggle onRadioSelect={onRadioSelect} selectedSkill={selectedSkill}/>
                 {selectedSkill === 'frontend' ? <SkillsList listName="Front End Skills" skillsArr={skillsArrFrontend}/> : <SkillsList listName="Back End Skills" skillsArr={skillsArrBackend}/>}
             </div>
-            
-
-
         </section>
     );
 }
