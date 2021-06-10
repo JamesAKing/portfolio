@@ -12,9 +12,9 @@ function HeaderNav() {
                 <li className="header-nav__item">
                     <NavLink exact to={homeURL} className="header-nav__link" activeClassName="header-nav__link--active">HOME</NavLink>
                 </li>
-                <li className="header-nav__item">
+                {/* <li className="header-nav__item">
                     <NavLink exact to={projectsURL} className="header-nav__link" activeClassName="header-nav__link--active">PROJECTS</NavLink>
-                </li>
+                </li> */}
                 <li className="header-nav__item">
                     <NavLink exact to={aboutURL} className="header-nav__link" activeClassName="header-nav__link--active">ABOUT ME</NavLink>
                 </li>

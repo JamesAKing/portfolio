@@ -13,16 +13,15 @@ function ProjectCard({ projectTitle, projectIcon, websiteURL , githubURL }) {
                 {websiteURL && 
                 <a className="project-card__link" href={websiteURL} target="_blank" rel="noreferrer">
                     <img className="project-card__icon" src={projectIcon} alt="see my code at GitHub" />
-                    <p className>View Site</p>
+                    <p>View Site</p>
                 </a>}
                 {githubURL &&
                 <a className="project-card__link" href={githubURL} target="_blank" rel="noreferrer">
                     <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
-                    <p className>View Code @ GitHub</p>
+                    <p>View Code @ GitHub</p>
                 </a>}
             </div>
         </li>
-
     );
 
 }
