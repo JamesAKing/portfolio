@@ -1,0 +1,60 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+
+$bubble-diameter: 100px;
+$bubble-spacing: 25px;
+
+.bubble {
+    position: fixed;
+    bottom:$bubble-spacing;
+    right:$bubble-spacing;
+    width: $bubble-diameter;
+    height: $bubble-diameter;
+    border-radius: 50%;
+    background-color: $color-background;
+    box-shadow: 0 0 5px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: 
+        width 250ms ease-in-out,
+        height 250ms ease-in-out,
+        border-radius 250ms ease-in-out,
+        display 250ms ease-in-out;
+
+
+    &--expand {
+        width: 200px;
+        height: 300px;
+        border-radius: 0;
+        align-items: flex-start;
+    }
+
+    &__canvas {
+        width: $bubble-diameter;
+        height: $bubble-diameter;
+        border-radius: 50%;
+
+        transition: 
+            width 250ms ease-in-out,
+            height 250ms ease-in-out,
+            border-radius 250ms ease-in-out;
+
+
+        &--expand {
+            background-color: lightslategrey;
+            width: 100%;
+            height: 50%;
+
+            border-radius: 0;
+
+        }
+    }
+}

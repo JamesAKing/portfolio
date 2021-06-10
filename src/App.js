@@ -7,6 +7,7 @@ import HomePage from './pages/home';
 import ProjectsPage from './pages/projects';
 import ProjectPage from './pages/project';
 import ResumePage from './pages/resume';
+import ContactBubble from './components/cta-contact-bubble/ContactBubble';
 import Footer from './components/footer/Footer';
 import { homeURL, aboutURL, resumeURL, projectsURL, contactMeURL } from './utilities/URLS';
 
@@ -27,6 +28,9 @@ function App() {
         </Switch>
 
         <Footer />
+      
+        {/* <ContactBubble /> */}
+
       </BrowserRouter>
       
 
