@@ -4,6 +4,8 @@
 $logo-dimension: 82px;
 
 .logo {
+    width: $logo-dimension;
+    height: $logo-dimension;
     position: relative;
     border-radius: 50%;
     display: flex;
@@ -18,7 +20,7 @@ $logo-dimension: 82px;
         bottom :0;
         left: 0;
         border: 4px solid black;
-        border-radius: 50%;;
+        border-radius: 50%;
     }
 
     &:hover::before {
@@ -31,8 +33,6 @@ $logo-dimension: 82px;
     }
 
     &__link {
-        width: $logo-dimension;
-        height: $logo-dimension;
         padding: 1em;
         border-radius: 50%;
         color: $color-text;
@@ -40,6 +40,7 @@ $logo-dimension: 82px;
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
 
         &--alt {
             color: $color-background;
