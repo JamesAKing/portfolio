@@ -3,15 +3,6 @@ import { useState } from 'react';
 import SectionHeader from '../section-header/SectionHeader';
 import SkillsToggle from '../skills-toggle/SkillsToggle';
 import SkillsList from '../skills-list/SkillsList';
-import ReactIcon from '../../assets/icons/react.svg';
-import HTMLIcon from '../../assets/icons/html5.svg';
-import CSSIcon from '../../assets/icons/css3.svg';
-import ExpressIcon from '../../assets/icons/express.svg';
-import JavaScriptIcon from '../../assets/icons/javascript.svg';
-import NodeIcon from '../../assets/icons/nodedotjs.svg';
-import PythonIcon from '../../assets/icons/python.svg';
-import reduxIcon from '../../assets/icons/redux.svg';
-import TensorFlowIcon from '../../assets/icons/tensorflow.svg';
 import { skillsArrFrontend, skillsArrBackend } from '../../assets/data/skills';
 
 function Skills() {

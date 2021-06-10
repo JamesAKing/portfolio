@@ -7,7 +7,9 @@ function SkillsList({ listName, skillsArr }) {
         <>
             <h3>{listName}</h3>
             <ul className="skills-list">
-                {skillsArr.map((skill, i) => <Skill key={i} skill={skill}/>)}
+                {skillsArr.map((skill, i) => {
+                    return <Skill key={i} skill={skill.skill} icon={skill.icon} />
+                })}
             </ul>
         </>
     );

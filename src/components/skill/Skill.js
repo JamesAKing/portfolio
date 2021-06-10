@@ -1,11 +1,15 @@
 import './Skill.scss';
 import HexagonGraphic from '../hexagon-graphic/HexagonGraphic';
 
-function Skill({ skill }) {
+function Skill({ skill, icon }) {
+
     return (
         <li className="skill">
-            <p className="skill__name">{skill.toUpperCase()}</p>
-            <HexagonGraphic />
+            <div className="skill__graphic">
+                <img className="icon skill__icon" src={icon} alt={skill} />
+                <HexagonGraphic />
+            </div>
+            <p>{skill.toUpperCase()}</p>
         </li>
     );
 }
