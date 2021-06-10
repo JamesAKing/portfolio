@@ -8,4 +8,12 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 3rem;
+        }
+    }
 }
