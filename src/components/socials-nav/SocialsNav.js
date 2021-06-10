@@ -5,6 +5,7 @@ import linkedInIcon from '../../assets/icons/linkedin.svg';
 import EmailIcon from '../../assets/icons/email.svg';
 
 function SocialsNav() {
+
     return (
         <nav className="socials">
             <ul className="socials__items">
@@ -13,8 +14,8 @@ function SocialsNav() {
                         <img className="icon" src={GithubIcon} alt="github link" />
                     </a>
                 </li>
-                <li className="socials__item" target="_blank" rel="noreferrer">
-                    <a href={myLinkedinURL}>
+                <li className="socials__item">
+                    <a href={myLinkedinURL} target="_blank" rel="noreferrer">
                         <img className="icon" src={linkedInIcon} alt="linkedin link" />
                     </a>
                 </li>
@@ -26,6 +27,7 @@ function SocialsNav() {
             </ul>
         </nav>
     );
+    
 }
 
 export default SocialsNav;
