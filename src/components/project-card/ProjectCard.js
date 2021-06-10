@@ -2,9 +2,9 @@ import './ProjectCard.scss';
 import GithubIcon from '../../assets/icons/github.svg'
 import DefaultWebsiteIcon from '../../assets/icons/default-website.svg'; 
 
-function ProjectCard({ projectTitle, websiteURL , githubURL }) {
+function ProjectCard({ projectTitle, projectIcon, websiteURL , githubURL }) {
 
-    
+    if (websiteURL && !projectIcon) projectIcon = DefaultWebsiteIcon;
 
     return (
         <li className="project-card">
@@ -12,7 +12,7 @@ function ProjectCard({ projectTitle, websiteURL , githubURL }) {
             <div className="project-card__links">
                 {websiteURL && 
                 <a className="project-card__link" href={websiteURL} target="_blank" rel="noreferrer">
-                    <img className="project-card__icon" src={DefaultWebsiteIcon} alt="see my code at GitHub" />
+                    <img className="project-card__icon" src={projectIcon} alt="see my code at GitHub" />
                     <p className>View Site</p>
                 </a>}
                 {githubURL &&
