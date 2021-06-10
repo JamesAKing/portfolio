@@ -1,16 +1,17 @@
+@use "./styles/fonts" as *;
 @use "./styles/mixins" as *;
 @use "./styles/variables" as *;
 @use "./styles/global.scss" as *;
 
 
 *, *::before, *::after {
+  font-family: 'Raleway Medium' ,Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: $color-text;
 }
 
