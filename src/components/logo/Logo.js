@@ -5,8 +5,8 @@ import { homeURL } from '../../utilities/URLS';
 function Logo({ alt }) {
 
     return (
-        <div className={`logo ${alt ? "logo--alt" : null}`}>
-            <Link className={`logo__link ${alt ? "logo__link--alt" : null}`} to={homeURL}>
+        <div className="logo">
+            <Link className={`logo__link${alt ? " logo__link--alt" : ""}`} to={homeURL}>
                 <h1>JK</h1>
             </Link>
         </div>
