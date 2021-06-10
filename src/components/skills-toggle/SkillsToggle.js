@@ -1,5 +1,4 @@
 import './SkillsToggle.scss';
-import { useState } from 'react';
 import SkillsToggleForm from '../skills-toggle-form/SkillsToggleForm';
 
 function SkillsToggle({ onRadioSelect, selectedSkill }) {

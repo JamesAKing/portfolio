@@ -18,3 +18,8 @@ body {
 .App {
   @include page-default;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}

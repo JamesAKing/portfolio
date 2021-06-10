@@ -9,17 +9,17 @@ function SocialsNav() {
         <nav className="socials">
             <ul className="socials__items">
                 <li className="socials__item">
-                    <a href={myGithubURL} target="_blank">
+                    <a href={myGithubURL} target="_blank" rel="noreferrer">
                         <img className="icon" src={GithubIcon} alt="github link" />
                     </a>
                 </li>
-                <li className="socials__item" target="_blank">
+                <li className="socials__item" target="_blank" rel="noreferrer">
                     <a href={myLinkedinURL}>
                         <img className="icon" src={linkedInIcon} alt="linkedin link" />
                     </a>
                 </li>
                 <li className="socials__item">
-                    <a href={mailtoEmailAddress} target="_blank">
+                    <a href={mailtoEmailAddress} target="_blank" rel="noreferrer">
                         <img className="icon" src={EmailIcon} alt="email" />
                     </a>
                 </li>

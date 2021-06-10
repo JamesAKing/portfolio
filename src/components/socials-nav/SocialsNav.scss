@@ -1,4 +1,6 @@
 @use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
 
 .socials {
     @include content-default;
@@ -15,8 +17,15 @@
 
     &__item {
         list-style: none;
+        padding: 1rem 0.5rem;
+        border-bottom: 3px solid transparent;
+
+        &:hover, &:focus, &:active {
+            border-bottom: 3px solid $color-background;
+        }
+
         @include tablet {
-            margin-right: 0.75rem;         
+            margin-right: 0.75rem; 
         }
     }
 }

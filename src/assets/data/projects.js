@@ -1,4 +1,4 @@
-import CubyFiIcon from '../project-icons/cuby-fi-black.png';
+import CubyFiIcon from '../project-icons/cuby-fi.svg';
 import { myGithubURL } from '../../utilities/URLS'; 
 
 export const projectsArr = [

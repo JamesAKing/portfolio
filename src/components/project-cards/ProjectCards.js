@@ -1,5 +1,4 @@
 import './ProjectCards.scss';
-import { myGithubURL } from '../../utilities/URLS';
 import ProjectCard from '../project-card/ProjectCard';
 
 import { projectsArr } from '../../assets/data/projects';
@@ -13,6 +12,7 @@ function ProjectCards() {
                     <ProjectCard
                         key={i}
                         projectTitle={project.projectTitle}
+                        projectIcon={project.projectLogo}
                         githubURL={project.githubURL}
                         websiteURL={project.websiteURL}
                     />
