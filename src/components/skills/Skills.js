@@ -11,9 +11,6 @@ function Skills() {
 
     const onRadioSelect = e => setSelectedSkill(e.target.value);
 
-    // const skillsArrFrontend = ["HTML", "CSS", "JavaScript", "Tensorflow.js", "React.js", "Redux"];
-    // const skillsArrBackend = ["Node.js", "Express.js", "Python"];
-
     return (
         <section className="skills">
             <div className="skills__content">
@@ -25,6 +22,7 @@ function Skills() {
             </div>
         </section>
     );
+    
 }
 
 export default Skills;
