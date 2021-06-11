@@ -12,9 +12,9 @@ function HiddenMenu({ setMenuActive }) {
                     <li className="hidden-menu__item">
                         <NavLink exact to={homeURL} className="hidden-menu__link" activeClassName="hidden-menu__link--active" onClick={() => setMenuActive(false)}>HOME</NavLink>
                     </li>
-                    <li className="hidden-menu__item">
+                    {/* <li className="hidden-menu__item">
                         <NavLink exact to={projectsURL} className="hidden-menu__link" activeClassName="hidden-menu__link--active" onClick={() => setMenuActive(false)}>PROJECTS</NavLink>
-                    </li>
+                    </li> */}
                     <li className="hidden-menu__item">
                         <NavLink exact to={aboutURL} className="hidden-menu__link" activeClassName="hidden-menu__link--active" onClick={() => setMenuActive(false)}>ABOUT ME</NavLink>
                     </li>
