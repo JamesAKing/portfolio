@@ -27,7 +27,7 @@ $bubble-spacing: 25px;
         display 250ms ease-in-out,
         background-color 250ms ease-in-out;
 
-        @include tablet {
+        @include desktop {
             display: flex;
         }
 
