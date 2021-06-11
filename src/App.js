@@ -7,7 +7,7 @@ import HomePage from './pages/home';
 // import ProjectsPage from './pages/projects';
 // import ProjectPage from './pages/project';
 import ResumePage from './pages/resume';
-// import ContactBubble from './components/cta-contact-bubble/ContactBubble';
+import ContactBubble from './components/cta-contact-bubble/ContactBubble';
 import Footer from './components/footer/Footer';
 import { homeURL, aboutURL, resumeURL, contactMeURL } from './utilities/URLS';
 
@@ -29,7 +29,7 @@ function App() {
 
         <Footer />
       
-        {/* <ContactBubble /> */}
+        <ContactBubble />
 
       </BrowserRouter>
       
