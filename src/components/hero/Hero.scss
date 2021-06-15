@@ -42,6 +42,15 @@
         }
     }
 
+    &__name {
+        font-weight: 600;
+        padding: 0 .3em;
+        white-space: nowrap;
+        color: $color-background;
+        background-color: $color-text;
+        animation: width-grow 1s;
+    }
+
     &__line {
         position: absolute;
         bottom: 0;
@@ -56,4 +65,9 @@
             max-width: none;
         }
     }
+}
+
+@keyframes width-grow {
+    from {width: 0;}
+    to {width: 100%;}
 }

@@ -7,7 +7,8 @@ function Hero() {
             <div className="hero__content">
                 <div className="hero__heading">
                     <h1 className="hero__text">FULL STACK DEVELOPER</h1>
-                    <p className="hero__text">DOING FULL STACK DEVELOPER THINGS</p>
+                    <p>MY NAME IS</p>
+                    <p className="hero__name hero__text">JAMES KING</p>
                     <div className="hero__line"></div>
                 </div>
             </div>
