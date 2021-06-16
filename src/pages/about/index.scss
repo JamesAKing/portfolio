@@ -24,6 +24,10 @@
         display: flex;
         align-items: center;
 
+        @include tablet {
+            min-height: 375px;
+        }
+
         &:nth-child(even) {
             padding-right: 1rem;
 
