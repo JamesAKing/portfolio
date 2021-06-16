@@ -16,6 +16,11 @@ import WebpackIcon from '../icons/webpack.svg';
 import SassIcon from '../icons/sass.svg';
 import BEMIcon from '../icons/BEM.svg';
 import OAuthIcon from '../icons/oauth.svg';
+import AuthIcon from '../icons/authentication.svg';
+import APIsIcon from '../icons/apis.svg';
+import DockerIcon from '../icons/docker.svg';
+import DOMIcon from '../icons/dom.svg';
+import RespDesignIcon from '../icons/responsive-design.svg';
 
 
 
@@ -84,11 +89,11 @@ export const skillsObjIndustry = {
         },
         {
             skill : 'api\'s',
-            icon : null
+            icon : APIsIcon
         },
         {
             skill : 'web api\'s',
-            icon : null
+            icon : APIsIcon
         },
         {
             skill : 'heroku',
@@ -96,7 +101,7 @@ export const skillsObjIndustry = {
         },
         {
             skill : 'document object model',
-            icon : null
+            icon : DOMIcon
         },
         {
             skill : 'npm',
@@ -108,7 +113,7 @@ export const skillsObjIndustry = {
         },
         {
             skill : 'user authentication',
-            icon : null
+            icon : AuthIcon
         },
         {
             skill : 'OAuth',
@@ -124,7 +129,11 @@ export const skillsObjIndustry = {
         },
         {
             skill : 'responsive design',
-            icon : null
+            icon : RespDesignIcon
+        },
+        {
+            skill : 'docker',
+            icon : DockerIcon
         }
     ]
 }
