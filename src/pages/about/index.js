@@ -1,5 +1,6 @@
 import './index.scss';
 import HeroAbout from '../../components/hero-about/HeroAbout';
+import Skills from '../../components/skills/Skills';
 
 function AboutPage() {
     return (
@@ -12,6 +13,7 @@ function AboutPage() {
                 <p className="bio__text">I decided to start teaching myself Python in 2018 and was instantly hooked...</p>
                 <p className="bio__text">I am now focusing on combining my years of sales and customer success experience with my developer skill set to build exciting and innovative creations that help solve our everyday problems.</p>
             </section>
+            <Skills />
         </main>
     );
 }
