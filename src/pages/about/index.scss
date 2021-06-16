@@ -20,9 +20,21 @@
 
     &__text {
         min-height: 300px;
-        // padding: 4rem 0;
+        font-size: 1.125rem;
         display: flex;
         align-items: center;
+
+        &:nth-child(even) {
+            padding-right: 1rem;
+
+            @include tablet {
+                padding-right: 1.5rem;
+            }
+
+            @include desktop {
+                padding-right: 3rem;
+            }
+        }
 
         &:nth-child(odd) {
             position: relative;
@@ -34,13 +46,13 @@
             text-align: end;
 
             @include tablet {
-                padding-left: -1.5rem;
+                padding-left: -2.5rem;
                 padding-right: -1.5rem;
                 margin: 0 -1.5rem;
             }
 
             @include desktop {
-                padding-left: 1rem;
+                padding-left: 3rem;
                 padding-right: 1rem;
                 margin: 0 -1rem;
 
