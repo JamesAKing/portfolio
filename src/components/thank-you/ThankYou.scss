@@ -1,0 +1,48 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.thank-you {
+    @include container-default;
+    padding-top: 4rem;
+    background-color: $color-text;
+    display: flex;
+    justify-content: center;
+
+
+    &__content {
+        @include content-default;
+        
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        color: $color-background;
+        max-width: 300px;
+        padding-bottom: 2rem;
+
+        @include tablet {
+            padding-bottom: 0;
+        }
+
+        &--highlight {
+            padding: 0 .4rem;
+            font-weight: 600;
+            color: $color-text;
+            background-color: $color-background;
+        }
+    }
+
+    &__msg-container {
+        text-align: end;
+        // PREPPED FOR SIGNAUTRE ADDITION
+    }
+
+    &__msg {
+        font-style: italic;
+        font-family: 'Raleway Light';
+    }
+}
