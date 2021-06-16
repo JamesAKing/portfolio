@@ -22,9 +22,11 @@ $profile-pic-size-tablet: 300px;
         height: calc((100vh - 150px) / 2);
         min-height: 175px;
         display: flex;
+        flex-direction: column;
+        gap: 25px;
         justify-content: center;
         align-items: center;
-
+        
         @include tablet {
             width: 50%;
             height: calc(100vh - 150px);

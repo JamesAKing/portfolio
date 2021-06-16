@@ -9,7 +9,8 @@ function HeroAbout() {
                     <img className="about-hero__profile-pic" src={profilePic}  alt="This is me" />
                 </div>
                 <div className="about-hero__column">
-                    <h1>I'm James</h1>
+                    <h1>I'm James,</h1>
+                    <p>Thank you for stopping by...</p>
                 </div>
             </div>
         </section>
