@@ -20,16 +20,17 @@
 
     &__text {
         min-height: 300px;
-        padding: 4rem 0;
+        // padding: 4rem 0;
         display: flex;
         align-items: center;
 
         &:nth-child(odd) {
+            position: relative;
             color: $color-background;
             background-color: $color-text;
             padding-left: 1rem;
             padding-right: 1rem;
-            margin: 0 -1rem -1px;
+            margin: 0 -1rem;
             text-align: end;
 
             @include tablet {
@@ -42,7 +43,28 @@
                 padding-left: 1rem;
                 padding-right: 1rem;
                 margin: 0 -1rem;
+
+                &::before {
+                    content: "";
+                    background-color: $color-text;
+                    position: absolute;
+                    left: calc(-1 * ((100vw - 831.5px)/2));
+                    right: 100%;
+                    top: 0;
+                    bottom: 0;
+                }
+
+                &::after {
+                    content: "";
+                    background-color: $color-text;
+                    position: absolute;
+                    right: calc(-1 * ((100vw - 831.5px)/2));
+                    left: 100%;
+                    top: 0;
+                    bottom: 0;
+                }
             }
+
         }
     }
 }
