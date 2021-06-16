@@ -8,7 +8,6 @@ function SkillsToggleForm({ onRadioSelect, selectedSkill }) {
                 Front End
                 <input className="skills-form__radio" type="radio" id="frontend" name="skillsToggle" value="frontend" onChange={onRadioSelect}/>
             </label>
-            
             <label className={`skills-form__label ${selectedSkill === "backend" ? "skills-form__label--selected" : null}`} htmlFor="backend">
                 Back End
                 <input className="skills-form__radio" type="radio" id="backend" name="skillsToggle" value="backend" onChange={onRadioSelect}/>

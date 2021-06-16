@@ -13,6 +13,7 @@ $bubble-spacing: 25px;
     height: $bubble-diameter;
     border-radius: 50%;
     background-color: $color-background;
+    // Keep as black to emphasize component 
     box-shadow: 0 0 5px black;
     display: none;
     flex-direction: column;

@@ -9,8 +9,8 @@
     &__line {
         width: 0;
         height: 2px;
-        background-color: black;
-        animation: lineGrow 750ms linear forwards;
+        background-color: $color-text;
+        animation: hexagon-line-grow 750ms linear forwards;
     }
 
     &__hexagons {
@@ -41,12 +41,12 @@
             left: 0;
             width: 50px;
             height: 50px;
-            background-color: black;
+            background-color: $color-text;
         }
     }
 }
 
-@keyframes lineGrow {
-from { width: 0;}
-to { width: 100%;}
+@keyframes hexagon-line-grow {
+    from { width: 0;}
+    to { width: 100%;}
 }
