@@ -55,7 +55,7 @@ export const skillsObjFrontend = {
 }
 
 export const skillsObjBackend = {
-    skillsArrName : 'Back End SKills',
+    skillsArrName : 'Back End Skills',
     skillsArr : [
         {
             skill : 'node.js',
