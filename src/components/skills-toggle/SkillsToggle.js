@@ -1,11 +1,11 @@
 import './SkillsToggle.scss';
 import SkillsToggleForm from '../skills-toggle-form/SkillsToggleForm';
 
-function SkillsToggle({ onRadioSelect, selectedSkill }) {
+function SkillsToggle({ onRadioSelect, selectedSkillsObj }) {
 
     return (
         <div className="skills-toggle">
-            <SkillsToggleForm onRadioSelect={onRadioSelect} selectedSkill={selectedSkill} />
+            <SkillsToggleForm onRadioSelect={onRadioSelect} selectedSkillsObj={selectedSkillsObj} />
         </div>
     );
 
