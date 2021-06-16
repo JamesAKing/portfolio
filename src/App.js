@@ -1,5 +1,6 @@
 import './App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 import Header from './components/header/Header';
 import AboutPage from './pages/about';
 import ContactMePage from './pages/contact-me';
@@ -15,6 +16,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+
+        <ScrollToTop />
 
         <Header />
         
