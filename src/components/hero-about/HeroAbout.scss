@@ -39,8 +39,8 @@ $profile-pic-size-tablet: 300px;
         border: 2px solid $color-text;
         border-radius: 50%;
         object-fit: cover;
-        object-position: -50px 0px;
-        transform: rotate(270deg);
+        object-position: 0 -10px;
+        filter: grayscale(15%);
 
         @include tablet {
             width: $profile-pic-size-tablet;

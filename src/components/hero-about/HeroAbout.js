@@ -1,5 +1,5 @@
 import './HeroAbout.scss';
-import profilePic from '../../assets/images/temp-profile-img.jpg';
+import profilePic from '../../assets/images/profile-small.png';
 
 function HeroAbout() {
     return (
