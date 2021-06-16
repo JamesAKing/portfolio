@@ -1,4 +1,6 @@
 import './ThankYou.scss';
+import { Link } from 'react-router-dom';
+import { contactMeURL } from '../../utilities/URLS';
 
 function ThankYou() {
     return (
@@ -6,7 +8,7 @@ function ThankYou() {
             <div className="thank-you__content">
                 <div>
                     <h2 className="thank-you__text">
-                        <span className="thank-you__text--highlight">DROP ME A LINE,</span> I'D LIKE TO HEAR FROM YOU
+                        <Link to={contactMeURL} className="thank-you__text thank-you__text--highlight">DROP ME A LINE,</Link> I'D LIKE TO HEAR FROM YOU
                     </h2>
                 </div>
                 {/* <div className="thank-you__text thank-you__msg-container">
