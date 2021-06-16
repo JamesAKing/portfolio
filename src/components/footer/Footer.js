@@ -2,6 +2,7 @@ import './Footer.scss';
 import ThankYou from '../thank-you/ThankYou';
 import Logo from '../logo/Logo';
 import SocialsNav from '../socials-nav/SocialsNav';
+import CopyrightBar from '../copyright-bar/CopyrightBar';
 
 function Footer() {
 
@@ -15,6 +16,7 @@ function Footer() {
                     </div>
                     <SocialsNav />
                 </div>
+                <CopyrightBar />
             </footer>
         </>
     );
