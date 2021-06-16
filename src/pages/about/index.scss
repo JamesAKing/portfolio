@@ -44,24 +44,22 @@
                 padding-right: 1rem;
                 margin: 0 -1rem;
 
-                &::before {
+                &::before, &::after {
                     content: "";
                     background-color: $color-text;
                     position: absolute;
-                    left: calc(-1 * ((100vw - 831.5px)/2));
-                    right: 100%;
                     top: 0;
                     bottom: 0;
                 }
 
+                &::before {
+                    left: calc(-1 * ((100vw - 831.5px)/2));
+                    right: 100%;
+                }
+
                 &::after {
-                    content: "";
-                    background-color: $color-text;
-                    position: absolute;
                     right: calc(-1 * ((100vw - 831.5px)/2));
                     left: 100%;
-                    top: 0;
-                    bottom: 0;
                 }
             }
 
