@@ -6,18 +6,21 @@ export const projectsArr = [
         projectTitle : 'cuby-Fi',
         projectLogo : CubyFiIcon,
         githubURL : `${myGithubURL}/cuby-fi`,
-        websiteURL: null
+        websiteURL: null,
+        projectVideo : true
     },
     {
         projectTitle : 'Climate Mind',
         projectLogo : null,
         githubURL : null,
-        websiteURL: "https://climatemind.org/"
+        websiteURL: "https://climatemind.org/",
+        projectVideo : null
     },
     {
         projectTitle : 'Portfolio',
         projectLogo : null,
         githubURL : `${myGithubURL}/portfolio`,
-        websiteURL: null
+        websiteURL: null,
+        projectVideo : null
     }
 ]
