@@ -3,9 +3,10 @@ import GithubIcon from '../../assets/icons/github.svg'
 import DefaultWebsiteIcon from '../../assets/icons/default-website.svg'; 
 import WatchVideoIcon from '../../assets/icons/video-icon.svg';
 
-function ProjectCard({ projectTitle, projectIcon, websiteURL , githubURL }) {
+function ProjectCard({ project }) {
+    const { projectTitle, projectLogo, githubURL, websiteURL, projectVideo } = project;
 
-    if (websiteURL && !projectIcon) projectIcon = DefaultWebsiteIcon;
+    const projectIcon = websiteURL && !projectLogo ? DefaultWebsiteIcon : projectLogo;
 
     return (
         <li className="project-card">
@@ -13,19 +14,19 @@ function ProjectCard({ projectTitle, projectIcon, websiteURL , githubURL }) {
             <div className="project-card__links">
                 {websiteURL && 
                 <a className="project-card__link" href={websiteURL} target="_blank" rel="noreferrer">
-                    <img className="project-card__icon" src={projectIcon} alt="see my code at GitHub" />
+                    <img className="project-card__icon" src={projectIcon} alt={`view ${projectTitle} as a deployed website`} />
                     <p>View Site</p>
                 </a>}
                 {githubURL &&
                 <a className="project-card__link" href={githubURL} target="_blank" rel="noreferrer">
-                    <img className="project-card__icon" src={GithubIcon} alt="see my code at GitHub" />
+                    <img className="project-card__icon" src={GithubIcon} alt={`see code for ${projectTitle} at GitHub`} />
                     <p>View Code @ GitHub</p>
                 </a>}
-                {githubURL &&
-                <a className="project-card__link" href="#" target="_blank" rel="noreferrer">
-                    <img className="project-card__icon" src={WatchVideoIcon} alt="see my code at GitHub" />
+                {projectVideo &&
+                <div className="project-card__link">
+                    <img className="project-card__icon" src={WatchVideoIcon} alt={`watch demo of ${projectTitle}`} />
                     <p>Watch Project Demo</p>
-                </a>}
+                </div>}
             </div>
         </li>
     );

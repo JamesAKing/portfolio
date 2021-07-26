@@ -11,10 +11,11 @@ function ProjectCards() {
                 return (
                     <ProjectCard
                         key={i}
-                        projectTitle={project.projectTitle}
-                        projectIcon={project.projectLogo}
-                        githubURL={project.githubURL}
-                        websiteURL={project.websiteURL}
+                        // projectTitle={project.projectTitle}
+                        // projectIcon={project.projectLogo}
+                        // githubURL={project.githubURL}
+                        // websiteURL={project.websiteURL}
+                        project={project}
                     />
                 )
             })}
