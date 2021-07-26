@@ -1,4 +1,5 @@
 import ReactIcon from '../icons/react.svg';
+import TypeScriptIcon from '../icons/typescript.svg';
 import HTMLIcon from '../icons/html5.svg';
 import CSSIcon from '../icons/css3.svg';
 import ExpressIcon from '../icons/express.svg';
@@ -38,6 +39,10 @@ export const skillsObjFrontend = {
         {
             skill : 'javascript',
             icon : JavaScriptIcon
+        },
+        {
+            skill : 'typescript',
+            icon : TypeScriptIcon
         },
         {
             skill : 'react',

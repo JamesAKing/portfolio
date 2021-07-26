@@ -10,23 +10,25 @@ function Skills() {
     const [ selectedSkillsObj, setSelectedSkillsObj ] = useState(skillsObjFrontend);
 
     const onRadioSelect = e => {
+        // setEmptySkillsObj();
         if (e.target.value === 'frontend') return setSelectedSkillsObj(skillsObjFrontend);
         if (e.target.value === 'backend') return setSelectedSkillsObj(skillsObjBackend);
         if (e.target.value === 'industry') return setSelectedSkillsObj(skillsObjIndustry);
     };
+
+    // const setEmptySkillsObj = () => {
+    //     setSelectedSkillsObj({
+    //         skillsArrName : "", 
+    //         skillsArr : []
+    //     });
+    // }
 
     return (
         <section className="skills">
             <div className="skills__content">
                 <SectionHeader heading="MY SKILLS" />
                 <SkillsToggle onRadioSelect={onRadioSelect} selectedSkillsObj={selectedSkillsObj}/>
-
                 <SkillsList selectedSkillsObj={selectedSkillsObj} />
-
-                {/* {selectedSkillsObj === 'frontend' ? 
-                <SkillsList listName="Front End Skills" skillsArr={skillsObjFrontend}/> : 
-                <SkillsList listName="Back End Skills" skillsArr={skillsObjBackend}/>} */}
-                {/* <SkillsList  */}
             </div>
         </section>
     );
