@@ -10,7 +10,10 @@
         width: 0;
         height: 2px;
         background-color: $color-text;
-        animation: hexagon-line-grow 750ms linear forwards;
+        
+        &--animate {
+            animation: hexagon-line-grow 750ms linear forwards;
+        }
     }
 
     &__hexagons {
