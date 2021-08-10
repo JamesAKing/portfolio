@@ -4,12 +4,12 @@ import React, { useState, useRef, useEffect } from 'react';
 function HexagonGraphic() {
 
     const containerRef = useRef(null);
-    const [ isVisible, setIsVisble ] = useState(false);
+    const [ isVisible, setIsVisable ] = useState(false);
     // const [ animated, setAnimated ] = useState(false) 
 
     const callbackFunction = entries => {
         const [ entry ] = entries;
-        setIsVisble(entry.isIntersecting);
+        setIsVisable(entry.isIntersecting);
     };
 
     const options = {
@@ -29,7 +29,6 @@ function HexagonGraphic() {
 
     return (
         <div className="graphics">
-            {/* <div className="graphics__line" ref={containerRef}></div> */}
             <div className={`graphics__line ${isVisible ? "graphics__line--animate" : ""}`} ref={containerRef}></div>
             <div className="graphics__hexagons">
                 <div className="graphics__hexagon graphics__hexagon--outer"></div>
