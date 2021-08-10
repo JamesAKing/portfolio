@@ -10,7 +10,7 @@ import ProjectPage from './pages/project';
 import ResumePage from './pages/resume';
 import ContactBubble from './components/cta-contact-bubble/ContactBubble';
 import Footer from './components/footer/Footer';
-import { homeURL, aboutURL, resumeURL, contactMeURL,projectsURL } from './utilities/URLS';
+import { homeURL, aboutURL, resumeURL, contactMeURL, projectsURL } from './utilities/URLS';
 
 function App() {
   return (

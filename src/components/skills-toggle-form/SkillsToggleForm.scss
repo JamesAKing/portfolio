@@ -8,6 +8,7 @@
 
     &__label {
         width: 200px;
+        width: 100%;
         height: inherit;
         padding: 2rem 1rem;
         border: 2px solid $color-text;
@@ -15,6 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         cursor: pointer;
         transition: box-shadow 150ms ease-out;
 
@@ -37,6 +39,6 @@
     }
 
     &__radio {
-        opacity: 0;
+        display: none;
     }
 }
