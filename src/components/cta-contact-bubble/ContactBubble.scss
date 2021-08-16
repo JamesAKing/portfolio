@@ -13,8 +13,7 @@ $bubble-spacing: 25px;
     height: $bubble-diameter;
     border-radius: 50%;
     background-color: $color-background;
-    // Keep as black to emphasize component 
-    box-shadow: 0 0 5px black;
+    box-shadow: $shadow-default;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +24,7 @@ $bubble-spacing: 25px;
         width 250ms ease-in-out,
         height 250ms ease-in-out,
         border-radius 250ms ease-in-out,
-        display 250ms ease-in-out,
+        display 750ms ease-in,
         background-color 250ms ease-in-out;
 
         @include desktop {
