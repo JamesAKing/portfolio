@@ -1,7 +1,6 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-
 $bubble-diameter: 100px;
 $bubble-spacing: 25px;
 
@@ -51,7 +50,6 @@ $bubble-spacing: 25px;
             width 250ms ease-in-out,
             height 250ms ease-in-out,
             border-radius 250ms ease-in-out;
-
 
         &--expand {
             width: 100%;
