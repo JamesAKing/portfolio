@@ -23,10 +23,9 @@ function ProjectCards() {
     return (
         <ul className="project-cards">
             {displayModal &&
-                <Modal>
+                <Modal deactivate={() => setDisplayModal(false)}>
                     <video className="video" controls>
                         <source src={cubyFiVideo} />
-
                     </video>
                 </Modal>
             }
