@@ -7,7 +7,7 @@ export const projectsArr = [
         projectLogo : CubyFiIcon,
         githubURL : `${myGithubURL}/cuby-fi`,
         websiteURL: null,
-        projectVideo : true
+        projectVideo : '../video/cubyFi.mp4'
     },
     {
         projectTitle : 'Climate Mind',
