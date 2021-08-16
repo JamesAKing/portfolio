@@ -57,6 +57,12 @@
 
         &--active {
             border-bottom: 0.25rem solid $color-text;
+            transition: 0.2s ease-out;
+
+
+            &:hover {
+                border-bottom: none;
+            }
         }
     }
 }
