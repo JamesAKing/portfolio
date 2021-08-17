@@ -5,7 +5,7 @@ import DefaultWebsiteIcon from '../../assets/icons/default-website.svg';
 import WatchVideoIcon from '../../assets/icons/video-icon.svg';
 
 function ProjectCard({ project, handleDisplayModal }) {
-    const { projectTitle, projectLogo, githubURL, websiteURL } = project;
+    const { projectTitle, projectLogo, githubURL, websiteURL, projectVideo } = project;
 
     const projectIcon = websiteURL && !projectLogo ? DefaultWebsiteIcon : projectLogo;
 
@@ -23,10 +23,12 @@ function ProjectCard({ project, handleDisplayModal }) {
                     <img className="project-card__icon" src={GithubIcon} alt={`see code for ${projectTitle} at GitHub`} />
                     <p>View Code @ GitHub</p>
                 </a>}
-                <div className="project-card__link" onClick={handleDisplayModal}>
-                    <img id={projectTitle} className="project-card__icon" src={WatchVideoIcon} alt={`watch demo of ${projectTitle}`} />
-                    <p>Watch Project Demo</p>
-                </div>
+                {projectVideo &&
+                    <div className="project-card__link" onClick={handleDisplayModal}>
+                        <img id={projectTitle} className="project-card__icon" src={WatchVideoIcon} alt={`watch demo of ${projectTitle}`} />
+                        <p>Watch Project Demo</p>
+                    </div>
+                }
             </div>
         </li>
     );
