@@ -22,5 +22,19 @@ export const projectsArr = [
         githubURL : `${myGithubURL}/portfolio`,
         websiteURL: null,
         projectVideo : null
+    },
+    {
+        projectTitle : 'Rhodes Central - Voucher Landing Page',
+        projectLogo : null,
+        githubURL : null,
+        websiteURL: 'http://rhodes-landing-page.s3-website-ap-southeast-2.amazonaws.com/',
+        projectVideo : null
+    },
+    {
+        projectTitle : 'Aussie Animal Experince',
+        projectLogo : null,
+        githubURL : null,
+        websiteURL: 'https://aussieanimalquest.com.au/',
+        projectVideo : null
     }
 ]

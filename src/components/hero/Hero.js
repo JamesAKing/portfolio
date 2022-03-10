@@ -2,29 +2,29 @@ import './Hero.scss';
 import React, { useState, useRef, useEffect } from 'react';
 
 function Hero() {
-
     const containerRef = useRef(null);
     const [ isVisible, setIsVisible ] = useState(false);
 
-    const callbackFunction = entries => {
+    const callback = entries => {
         const [ entry ] = entries;
         setIsVisible(entry.isIntersecting);
     };
 
-    const options = {
-        root : null,
-        rootMargin : "0px",
-        threshold : 1.0
-    };
-
+    
     useEffect(() => {
-        const observer = new IntersectionObserver(callbackFunction, options);
+        const options = {
+            root : null,
+            rootMargin : "0px",
+            threshold : 1.0
+        };
+
+        const observer = new IntersectionObserver(callback, options);
         if (containerRef.current) observer.observe(containerRef.current);
 
         return () => {
             if (containerRef.current) observer.unobserve(containerRef.current);
         };
-    }, [containerRef, options])
+    }, [containerRef])
 
     return (
         <section className="hero">

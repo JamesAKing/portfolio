@@ -1,6 +1,6 @@
 import './HeaderNav.scss';
 import { NavLink } from 'react-router-dom';
-import { homeURL, projectsURL, aboutURL, contactMeURL } from '../../utilities/URLS';
+import { homeURL, aboutURL, contactMeURL } from '../../utilities/URLS';
 // import GithubIcon from '../../assets/icons/github.svg';
 // import LinkedInIcon from '../../assets/icons/linkedin.svg';
 

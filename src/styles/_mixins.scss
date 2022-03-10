@@ -24,7 +24,8 @@
     // USE ON PAGE COMPONENTS ONLY
     width: 100%;
     min-width: $screen-mobile;
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - $header-height);
+    min-height: calc(var(--vh) - $header-height); // Fix for Mobile Browser Height
 }
 
 @mixin container-default {

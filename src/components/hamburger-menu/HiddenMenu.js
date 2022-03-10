@@ -1,6 +1,6 @@
 import './HiddenMenu.scss';
 import { NavLink } from 'react-router-dom';
-import { homeURL, projectsURL, aboutURL, contactMeURL } from '../../utilities/URLS';
+import { homeURL, aboutURL, contactMeURL } from '../../utilities/URLS';
 
 function HiddenMenu({ setMenuActive }) {
 

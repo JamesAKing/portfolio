@@ -1,4 +1,5 @@
 import './App.scss';
+import { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ScrollToTop from './components/scroll-to-top/ScrollToTop';
 import Header from './components/header/Header';
@@ -13,6 +14,16 @@ import Footer from './components/footer/Footer';
 import { homeURL, aboutURL, resumeURL, contactMeURL, projectsURL } from './utilities/URLS';
 
 function App() {
+
+  useEffect(() => {
+    if (typeof window === undefined) return console.error('Window is not defined');
+
+    const pixelHeight = window.innerHeight / 100;
+    const root = document.querySelector(':root');
+
+    if (root) root.style.setProperty('--vh', `${pixelHeight}px`);
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>

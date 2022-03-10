@@ -1,5 +1,5 @@
 import './ProjectCard.scss';
-import React, { useState } from 'react';
+import React from 'react';
 import GithubIcon from '../../assets/icons/github.svg'
 import DefaultWebsiteIcon from '../../assets/icons/default-website.svg'; 
 import WatchVideoIcon from '../../assets/icons/video-icon.svg';
