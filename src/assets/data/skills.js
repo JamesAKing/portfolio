@@ -22,6 +22,8 @@ import APIsIcon from '../icons/apis.svg';
 import DockerIcon from '../icons/docker.svg';
 import DOMIcon from '../icons/dom.svg';
 import RespDesignIcon from '../icons/responsive-design.svg';
+import AwsIcon from '../icons/amazonaws.svg';
+import AwsS3 from '../icons/amazons3.svg';
 
 
 
@@ -84,6 +86,14 @@ export const skillsObjBackend = {
 export const skillsObjIndustry = {
     skillsArrName : 'Industry Best Practices',
     skillsArr : [
+        {
+            skill : 'Amazon AWS',
+            icon : AwsIcon
+        },
+        {
+            skill : 'Amazon S3',
+            icon : AwsS3
+        },
         {
             skill : 'git',
             icon : GitIcon
