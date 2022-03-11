@@ -10,3 +10,5 @@ export const emailAddress = "james_andrew_king@hotmail.co.uk";
 export const mailtoEmailAddress = `mailto:${emailAddress}?subject=Get%20In%20Touch`;
 export const myGithubURL = "https://github.com/JamesAKing";
 export const myLinkedinURL = "https://www.linkedin.com/in/james--king/";
+
+export const CatalystVRWebsiteLink = "https://catalystvr.com.au/";

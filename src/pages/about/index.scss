@@ -78,7 +78,17 @@
                     left: 100%;
                 }
             }
+        }
+    }
 
+    &__link {
+        padding: .25rem;
+        color: $color-background;
+        background: $color-text;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
