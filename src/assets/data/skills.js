@@ -7,6 +7,7 @@ import JavaScriptIcon from '../icons/javascript.svg';
 import NodeIcon from '../icons/nodedotjs.svg';
 import PythonIcon from '../icons/python.svg';
 import ReduxIcon from '../icons/redux.svg';
+import NextIcon from '../icons/nextdotjs.svg';
 import TensorFlowIcon from '../icons/tensorflow.svg';
 import MySQLIcon from '../icons/mysql.svg';
 import GitIcon from '../icons/git.svg';
@@ -53,6 +54,10 @@ export const skillsObjFrontend = {
         {
             skill : 'redux',
             icon : ReduxIcon
+        },
+        {
+            skill : 'next JS',
+            icon : NextIcon
         },
         {
             skill : 'tensorflow.js',
