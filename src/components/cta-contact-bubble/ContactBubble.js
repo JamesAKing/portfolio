@@ -15,8 +15,6 @@ function ContactBubble() {
             <div className={`bubble__socials${toggleBubble ? " bubble__socials--expand" : ""}`}>
                 <SocialsNav />
             </div>
-            
-            
         </aside>
     );
 
