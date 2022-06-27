@@ -16,7 +16,7 @@
     &__text {
         text-align: center;
         color: $color-background-alt;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
 
         @include tablet {
             margin-bottom: 2.5rem;

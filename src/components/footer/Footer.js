@@ -9,7 +9,7 @@ function Footer() {
     return (
         <>
             <ThankYou />
-            <footer className="footer">
+            <footer id="contactMe" className="footer">
                 <div className="footer__content">
                     <div className="footer__logo">
                         <Logo alt={true}/>
