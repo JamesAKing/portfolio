@@ -16,6 +16,7 @@ import { homeURL, aboutURL, resumeURL, contactMeURL, projectsURL } from './utili
 function App() {
 
   useEffect(() => {
+    // Broswer height fix not curently working. 
     if (typeof window === undefined) return console.error('Window is not defined');
 
     const pixelHeight = window.innerHeight / 100;
@@ -27,11 +28,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-
         <ScrollToTop />
-
         <Header />
-        
+
         <Switch>
           <Route exact path={homeURL} component={HomePage} />
           <Route path={aboutURL} component={AboutPage} />
@@ -42,12 +41,8 @@ function App() {
         </Switch>
 
         <Footer />
-      
         <ContactBubble />
-
       </BrowserRouter>
-      
-
     </div>
   );
 }

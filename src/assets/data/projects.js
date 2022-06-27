@@ -1,7 +1,25 @@
 import CubyFiIcon from '../project-icons/cuby-fi.svg';
+import UberEastZooLogo from '../project-icons/ubereats.svg';
+
 import { myGithubURL } from '../../utilities/URLS'; 
 
 export const projectsArr = [
+    // {
+    //     projectTitle : 'Uber Eats Zoo',
+    //     projectDesc : null,
+    //     projectLogo : UberEastZooLogo,
+    //     githubURL : null,
+    //     websiteURL: 'https://ubereatszoo.com.au/',
+    //     projectVideo : null
+    // },
+    {
+        projectTitle : 'Aussie Animal Experince',
+        projectDesc : null,
+        projectLogo : null,
+        githubURL : null,
+        websiteURL: 'https://aussieanimalquest.com.au/',
+        projectVideo : null
+    },
     {
         projectTitle : 'cuby-Fi',
         projectDesc : null,
@@ -35,11 +53,11 @@ export const projectsArr = [
         projectVideo : null
     },
     {
-        projectTitle : 'Aussie Animal Experince',
+        projectTitle : 'Pirates of Atlassian Backend Leaderboard',
         projectDesc : null,
         projectLogo : null,
         githubURL : null,
-        websiteURL: 'https://aussieanimalquest.com.au/',
+        websiteURL: null,
         projectVideo : null
     }
 ]

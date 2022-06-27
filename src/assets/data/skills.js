@@ -24,7 +24,8 @@ import DockerIcon from '../icons/docker.svg';
 import DOMIcon from '../icons/dom.svg';
 import RespDesignIcon from '../icons/responsive-design.svg';
 import AwsIcon from '../icons/amazonaws.svg';
-import AwsS3 from '../icons/amazons3.svg';
+import FirebaseIcon from '../icons/firebase.svg';
+import ThreeJSIcon from '../icons/threedotjs.svg'
 
 
 
@@ -44,6 +45,10 @@ export const skillsObjFrontend = {
             icon : JavaScriptIcon
         },
         {
+            skill : 'three js',
+            icon : ThreeJSIcon
+        },
+        {
             skill : 'typescript',
             icon : TypeScriptIcon
         },
@@ -51,10 +56,10 @@ export const skillsObjFrontend = {
             skill : 'react',
             icon : ReactIcon
         },
-        {
-            skill : 'redux',
-            icon : ReduxIcon
-        },
+        // {
+        //     skill : 'redux',
+        //     icon : ReduxIcon
+        // },
         {
             skill : 'next JS',
             icon : NextIcon
@@ -77,14 +82,18 @@ export const skillsObjBackend = {
             skill : 'express.js',
             icon : ExpressIcon
         },
+        // {
+        //     skill : 'python',
+        //     icon : PythonIcon
+        // },
+        // {
+        //     skill : 'mysql',
+        //     icon : MySQLIcon
+        // },
         {
-            skill : 'python',
-            icon : PythonIcon
+            skill : 'next JS',
+            icon : NextIcon
         },
-        {
-            skill : 'mysql',
-            icon : MySQLIcon
-        }
     ]
 }
 
@@ -96,8 +105,8 @@ export const skillsObjIndustry = {
             icon : AwsIcon
         },
         {
-            skill : 'Amazon S3',
-            icon : AwsS3
+            skill : 'Firebase',
+            icon : FirebaseIcon
         },
         {
             skill : 'git',
@@ -108,13 +117,13 @@ export const skillsObjIndustry = {
             icon : GithubIcon
         },
         {
-            skill : 'api\'s',
+            skill : ' REST api\'s',
             icon : APIsIcon
         },
-        {
-            skill : 'web api\'s',
-            icon : APIsIcon
-        },
+        // {
+        //     skill : 'web api\'s',
+        //     icon : APIsIcon
+        // },
         {
             skill : 'heroku',
             icon : HerokuIcon
@@ -140,7 +149,7 @@ export const skillsObjIndustry = {
             icon : OAuthIcon
         },
         {
-            skill : 'sass / scss',
+            skill : 'scss',
             icon : SassIcon
         },
         {

@@ -4,7 +4,6 @@ function ResumePage() {
     return (
         <div>
             RESUME
-
         </div>
     );
 }
