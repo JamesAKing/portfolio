@@ -1,4 +1,4 @@
-const defaultURL = '';
+const defaultURL = "";
 
 export const homeURL = `${defaultURL}/`;
 export const aboutURL = `${defaultURL}/about-me`;
