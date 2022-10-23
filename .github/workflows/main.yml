@@ -1,1 +1,41 @@
 # 1//03XS8pOA9NvloCgYIARAAGAMSNwF-L9IrHtG3nVHl_kS-0z171sEWKkT76b-LdghgFMC6LQxnPlfLwMdT-phjHH3hlL6lJLFR7DM
+name: Build and Deploy
+
+on:
+  push: [main]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@main
+      - name: Install Dependencies
+        uses: npm ci
+      - name: Build project
+        uses: npm build
+      - name: Archive production artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: build
+          path: build
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@main
+      - name: Download artifact
+        uses: actions/download-artifact@main
+        with:
+          name: build
+          path: build
+      - name: Deploy to firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
