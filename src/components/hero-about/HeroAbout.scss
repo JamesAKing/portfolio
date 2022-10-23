@@ -5,48 +5,47 @@ $profile-pic-size-mobile: 200px;
 $profile-pic-size-tablet: 300px;
 
 .about-hero {
-    @include content-default;
-    padding-bottom: 1.5rem;
+  @include content-default;
+  padding-bottom: 1.5rem;
 
-    &__content {
-        width: 100%;
+  &__content {
+    width: 100%;
 
-        @include tablet {
-            display: flex;
-        }
+    @include tablet {
+      display: flex;
     }
+  }
 
-    &__column {
-        width: 100%;
-        flex-grow: 1;
-        height: calc((100vh - 150px) / 2);
-        min-height: 175px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        justify-content: center;
-        align-items: center;
-        
-        @include tablet {
-            width: 50%;
-            height: calc(100vh - 150px);
-            min-height: 350px;
-        }
+  &__column {
+    width: 100%;
+    flex-grow: 1;
+    height: calc((100vh - 150px) / 2);
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      width: 50%;
+      height: calc(100vh - 150px);
+      min-height: 350px;
     }
+  }
 
-    &__profile-pic {
-        width: $profile-pic-size-mobile;
-        height: $profile-pic-size-mobile;
-        padding: 0.5rem;
-        border: 2px solid $color-text;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: 0 -10px;
-        filter: grayscale(15%);
+  &__profile-pic {
+    width: $profile-pic-size-mobile;
+    height: $profile-pic-size-mobile;
+    padding: 0.5rem;
+    border: 2px solid $color-text;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(25%);
 
-        @include tablet {
-            width: $profile-pic-size-tablet;
-            height: $profile-pic-size-tablet;
-        }
+    @include tablet {
+      width: $profile-pic-size-tablet;
+      height: $profile-pic-size-tablet;
     }
+  }
 }
