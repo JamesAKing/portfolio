@@ -1,16 +1,24 @@
 @use "../../styles/variables" as *;
 
 .hamburger-icon {
-    width: 50px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: rotate 250ms ease-in-out;
 
-    &__line {
-        width: 100%;
-        height: 5px;
-        background-color: $color-text;
-    }
+  &__line {
+    width: 100%;
+    height: 5px;
+    background-color: $color-text;
+  }
+}
+.rotate90 {
+  rotate: 90deg;
+}
+
+.rotate00 {
+  rotate: 0deg;
 }

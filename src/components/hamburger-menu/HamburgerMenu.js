@@ -8,8 +8,8 @@ function HamburgerMenu() {
 
   return (
     <div className="hamburger-menu">
-      <HamburgerIcon setMenuActive={setMenuActive} />
-      {menuActive && <HiddenMenu setMenuActive={setMenuActive} />}
+      <HamburgerIcon menuActive={menuActive} setMenuActive={setMenuActive} />
+      <HiddenMenu menuActive={menuActive} setMenuActive={setMenuActive} />
     </div>
   );
 }

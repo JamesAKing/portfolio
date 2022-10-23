@@ -5,9 +5,11 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 
 import { homeURL, aboutURL, contactMeURL } from "../../utilities/URLS";
 
-function HiddenMenu({ setMenuActive }) {
+function HiddenMenu({ menuActive, setMenuActive }) {
   return (
-    <div className="hidden-menu">
+    <div
+      className={`hidden-menu ${menuActive ? "slideInRight" : "slideOutLeft"}`}
+    >
       <button
         className="hidden-menu__btn"
         type="button"

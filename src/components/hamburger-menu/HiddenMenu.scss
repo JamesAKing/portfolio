@@ -3,15 +3,16 @@
 
 .hidden-menu {
   @include container-default;
+  z-index: 2;
+  position: absolute;
   width: 100%;
   height: 100vh;
   min-height: 568px;
-  position: fixed;
+  box-shadow: 0 0 0 10px $color-text, 0 0 0 20px $color-background;
   top: 0;
   left: 0;
   background-color: $color-background;
-  z-index: 1;
-  animation: menu-fade-in-out 250ms;
+  transition: transform 250ms ease-in-out;
 
   &__btn {
     position: absolute;
@@ -31,59 +32,56 @@
 
     @include tablet {
       top: 28px;
-      margin: $pg-padding-tablet;
     }
   }
 
   &__nav {
     @include content-default;
-    height: calc(100vh - 115px);
-    margin-top: 115px;
+    height: 100%;
   }
 
   &__items {
-    text-align: end;
-    list-style: none;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-  }
+    justify-content: center;
+    gap: 6rem;
+    list-style-type: none;
 
-  &__item {
-    width: 50%;
-    margin-bottom: 2rem;
-
-    @include tablet {
-      width: 25%;
+    & a {
+      font-size: 1.5rem;
+      color: $color-text;
+      text-decoration: none;
     }
   }
 
+  //   &__item {
+  //   }
+
   &__link {
-    display: block;
-    color: $color-text;
-    text-decoration: none;
-    padding: 1.5rem 0;
-    border-left: 3px solid $color-background;
-    border-bottom: 3px solid $color-background;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    transition: padding 250ms ease-in-out;
+
+    &:active,
+    &:focus {
+      padding-left: 4rem;
+    }
 
     &--active {
-      padding-right: 1rem;
       border-left: 3px solid $color-text;
       border-bottom: 3px solid $color-text;
-
-      &::after {
-        content: "-";
-        margin-left: 0.5rem;
-      }
+      padding-left: 4rem;
+      padding-bottom: 1.5rem;
     }
   }
 }
 
-@keyframes menu-fade-in-out {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.slideInRight {
+  transform: translateX(-20px);
+}
+
+.slideOutLeft {
+  transform: translateX(calc(-100% - 20px));
 }
