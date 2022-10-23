@@ -9,7 +9,7 @@ import NodeIcon from "../icons/nodedotjs.svg";
 // import ReduxIcon from "../icons/redux.svg";
 import NextIcon from "../icons/nextdotjs.svg";
 // import TensorFlowIcon from "../icons/tensorflow.svg";
-// import MySQLIcon from "../icons/mysql.svg";
+import MySQLIcon from "../icons/mysql.svg";
 // import GitIcon from "../icons/git.svg";
 import GithubIcon from "../icons/github-alt.svg";
 // import HerokuIcon from "../icons/heroku.svg";
@@ -19,7 +19,7 @@ import SassIcon from "../icons/sass.svg";
 import BEMIcon from "../icons/BEM.svg";
 // import OAuthIcon from "../icons/oauth.svg";
 import AuthIcon from "../icons/authentication.svg";
-// import APIsIcon from "../icons/apis.svg";
+import APIsIcon from "../icons/apis.svg";
 // import DockerIcon from "../icons/docker.svg";
 // import DOMIcon from "../icons/dom.svg";
 import RespDesignIcon from "../icons/responsive-design.svg";
@@ -76,17 +76,21 @@ export const skillsObjBackend = {
       skill: "express.js",
       icon: ExpressIcon,
     },
-    // {
-    //     skill : 'python',
-    //     icon : PythonIcon
-    // },
-    // {
-    //     skill : 'mysql',
-    //     icon : MySQLIcon
-    // },
     {
       skill: "next JS",
       icon: NextIcon,
+    },
+    {
+      skill: "firebase admin and firestore",
+      icon: FirebaseIcon,
+    },
+    {
+      skill: "aws lambda",
+      icon: AwsIcon,
+    },
+    {
+      skill: "restful api",
+      icon: APIsIcon,
     },
   ],
 };
