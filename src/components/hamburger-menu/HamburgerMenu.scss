@@ -2,8 +2,6 @@
 @use "../../styles/variables" as *;
 
 .hamburger-menu {
-  //   width: 60px;
-
   @include desktop {
     display: none;
   }
