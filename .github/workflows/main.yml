@@ -1,24 +1,36 @@
-name: Build and Deploy
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Firebase CI
 
 on:
   push:
     branches: [main]
-
-  workflow_dispatch:
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@main
-      - name: Install Dependencies
-        uses: npm ci
-      - name: Build project
-        uses: npm build
-      - name: Archive production artifact
-        uses: actions/upload-artifact@main
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install -g yarn
+      - name: yarn install, build and test
+        run: |
+          yarn install
+          yarn build
+      - name: Archive Build
+        uses: actions/upload-artifact@v2
         with:
           name: build
           path: build
@@ -28,15 +40,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@main
-      - name: Download artifact
-        uses: actions/download-artifact@main
+      - uses: actions/checkout@v2
+      - name: Download Build
+        uses: actions/download-artifact@v2
         with:
           name: build
           path: build
-      - name: Deploy to firebase
-        uses: w9jds/firebase-action@master
+      - name: Depoy to Firebase
+        uses: w9jds/firebase-action@main
         with:
           args: deploy --only hosting
         env:
