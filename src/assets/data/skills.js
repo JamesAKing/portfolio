@@ -17,7 +17,7 @@ import GithubIcon from "../icons/github-alt.svg";
 // import WebpackIcon from "../icons/webpack.svg";
 import SassIcon from "../icons/sass.svg";
 import BEMIcon from "../icons/BEM.svg";
-import OAuthIcon from "../icons/oauth.svg";
+// import OAuthIcon from "../icons/oauth.svg";
 import AuthIcon from "../icons/authentication.svg";
 // import APIsIcon from "../icons/apis.svg";
 // import DockerIcon from "../icons/docker.svg";
@@ -138,10 +138,10 @@ export const skillsObjIndustry = {
       skill: "user authentication",
       icon: AuthIcon,
     },
-    {
-      skill: "OAuth",
-      icon: OAuthIcon,
-    },
+    // {
+    //   skill: "OAuth",
+    //   icon: OAuthIcon,
+    // },
     {
       skill: "scss",
       icon: SassIcon,
