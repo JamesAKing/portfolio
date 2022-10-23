@@ -1,3 +1,5 @@
+# Currently under maintenance
+
 # James King's Portfolio
 
 ## Table of Contents
@@ -13,8 +15,6 @@
 Thank you for taking the time to visit my site and learn more about me. The goal of this project is to showcase my skills and projects whilst simultaneously offer readers a chance to learn more about myself and my process. 
 I hope you enjoy everything you see. IF you have any questions then please do reach out and ask!
 
-https://james-king.herokuapp.com/contact-me
-
 ## Project Brief
 
 A Single Page Web App built using React to showcase my projects and skills. 
@@ -25,7 +25,7 @@ This site is consistently being worked on, with a focus on new features and impr
 
 This project has been deployed using Heroku and should be usable on all browsers 
 The live version of my site can be found here: 
-https://james-king.herokuapp.com/
+[Currently not live]
 
 ## Technologies
 
