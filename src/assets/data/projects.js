@@ -1,5 +1,6 @@
 import CubyFiIcon from "../project-icons/cuby-fi.svg";
 import UberEastZooLogo from "../project-icons/ubereats.svg";
+import SecretIcon from "../icons/secret.svg";
 
 import { myGithubURL } from "../../utilities/URLS";
 
@@ -47,16 +48,16 @@ export const projectsArr = [
   {
     projectTitle: "Rhodes Central Vouchers",
     projectDesc: null,
-    projectLogo: null,
+    projectLogo: SecretIcon,
     githubURL: null,
     // websiteURL: 'http://rhodes-landing-page.s3-website-ap-southeast-2.amazonaws.com/',
     websiteURL: null,
     projectVideo: null,
   },
   {
-    projectTitle: "Pirates of Atlassian Backend Leaderboard",
+    projectTitle: "Pirates of Atlassian",
     projectDesc: null,
-    projectLogo: null,
+    projectLogo: SecretIcon,
     githubURL: null,
     websiteURL: null,
     projectVideo: null,
@@ -64,7 +65,7 @@ export const projectsArr = [
   {
     projectTitle: "Cricket World Cup VR",
     projectDesc: null,
-    projectLogo: null,
+    projectLogo: SecretIcon,
     githubURL: null,
     websiteURL: null,
     projectVideo: null,

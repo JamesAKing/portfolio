@@ -6,134 +6,140 @@ $card-animation-spacing-mobile: 40px;
 $card-animation-spacing-tablet: 55px;
 
 .project-card {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-color: $color-background-alt;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: $color-background-alt;
+  text-align: center;
+
+  @include tablet {
+    width: calc((100% - 25px) / 2);
+    height: 350px;
+  }
+
+  @include desktop {
+    width: calc((100% - 50px) / 3);
+    height: 400px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: $card-animation-border-gap;
+    right: $card-animation-border-gap;
+    bottom: $card-animation-border-gap;
+    left: $card-animation-border-gap;
+    transition: transform 250ms ease-in-out 125ms;
+  }
+
+  &:before {
+    transform: scale(0, 1);
+  }
+
+  &:after {
+    transform: scale(1, 0);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1, 1);
+    top: $card-animation-spacing-mobile;
+    bottom: $card-animation-spacing-mobile;
+    border-top: 1px solid $color-background;
+    border-bottom: 1px solid $color-background;
 
     @include tablet {
-        width: calc((100% - 25px) / 2);
-        height: 350px;
+      top: $card-animation-spacing-tablet;
+      bottom: $card-animation-spacing-tablet;
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1, 1);
+    left: $card-animation-spacing-mobile;
+    right: $card-animation-spacing-mobile;
+    border-left: 1px solid $color-background;
+    border-right: 1px solid $color-background;
+
+    @include tablet {
+      left: $card-animation-spacing-tablet;
+      right: $card-animation-spacing-tablet;
+    }
+  }
+
+  &:hover .project-card__title,
+  &:focus .project-card__title {
+    height: $card-animation-spacing-mobile;
+
+    @include tablet {
+      height: $card-animation-spacing-tablet;
+    }
+  }
+
+  &:hover .project-card__links,
+  &:focus .project-card__links {
+    transform: scale(1, 1);
+  }
+
+  &__title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height ease-out 250ms;
+  }
+
+  &__links {
+    position: absolute;
+    top: $card-animation-spacing-mobile;
+    bottom: $card-animation-spacing-mobile;
+    left: $card-animation-spacing-mobile;
+    right: $card-animation-spacing-mobile;
+    transform: scale(1, 0);
+    transition: transform 250ms ease-in-out 125ms;
+    display: flex;
+    z-index: 1;
+
+    @include tablet {
+      top: $card-animation-spacing-tablet;
+      bottom: $card-animation-spacing-tablet;
+      left: $card-animation-spacing-tablet;
+      right: $card-animation-spacing-tablet;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $color-text-alt;
+    text-decoration: none;
+    text-align: center;
+    transition: border 150ms, color 150ms;
+    cursor: pointer;
+
+    @include tablet {
+      padding: 0.75rem;
     }
 
-    @include desktop {
-        width: calc((100% - 50px) / 3);
-        height: 400px;
+    &:hover,
+    &:focus {
+      color: $color-background;
     }
 
-    &::before, &::after {
-        content: "";
-        position: absolute;
-        top: $card-animation-border-gap;
-        right: $card-animation-border-gap;
-        bottom: $card-animation-border-gap;
-        left: $card-animation-border-gap;
-        transition: transform 250ms ease-in-out 125ms;
+    &--inactive {
+      cursor: not-allowed;
     }
+  }
 
-    &:before {
-        transform: scale(0, 1);
-    }
-
-    &:after {
-        transform: scale(1, 0);
-    }
-    
-    &:hover::before, &:focus::before {
-        transform: scale(1, 1);
-        top: $card-animation-spacing-mobile;
-        bottom: $card-animation-spacing-mobile;
-        border-top: 1px solid $color-background;
-        border-bottom: 1px solid $color-background;
-
-        @include tablet {
-            top: $card-animation-spacing-tablet;
-            bottom: $card-animation-spacing-tablet;
-        }
-    }
-
-    &:hover::after, &:focus::after {
-        transform: scale(1, 1);
-        left: $card-animation-spacing-mobile;
-        right: $card-animation-spacing-mobile;
-        border-left: 1px solid $color-background;
-        border-right: 1px solid $color-background;
-
-        @include tablet {
-            left: $card-animation-spacing-tablet;
-            right: $card-animation-spacing-tablet;
-        }
-    }
-
-    &:hover .project-card__title,
-    &:focus .project-card__title {
-        height: $card-animation-spacing-mobile;
-
-        @include tablet {
-            height: $card-animation-spacing-tablet;
-        }
-    }
-
-    &:hover .project-card__links,
-    &:focus .project-card__links {
-        transform: scale(1, 1);
-    }
-
-    &__title {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: height ease-out 250ms;
-    }
-
-    &__links {
-        position: absolute;
-        top: $card-animation-spacing-mobile;
-        bottom: $card-animation-spacing-mobile;
-        left: $card-animation-spacing-mobile;
-        right: $card-animation-spacing-mobile;
-        transform: scale(1, 0);
-        transition: transform 250ms ease-in-out 125ms;
-        display: flex;
-        z-index: 1;
-
-        @include tablet {
-            top: $card-animation-spacing-tablet;
-            bottom: $card-animation-spacing-tablet;
-            left: $card-animation-spacing-tablet;
-            right: $card-animation-spacing-tablet;
-        }
-    }
-
-    &__link {
-        width: 100%;
-        height: 100%;;
-        padding: 0.25rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        color: $color-text-alt;
-        text-decoration: none;
-        text-align: center;
-        transition: 
-            border 150ms,
-            color 150ms;
-            cursor: pointer;
-
-        @include tablet {
-            padding: 0.75rem;
-        }
-
-        &:hover, &:focus {
-            color: $color-background;
-        }
-    }
-
-    &__icon {
-        width: 75px;
-    }
+  &__icon {
+    width: 75px;
+  }
 }
