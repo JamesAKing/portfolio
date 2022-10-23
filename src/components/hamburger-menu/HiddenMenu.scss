@@ -2,82 +2,88 @@
 @use "../../styles/variables" as *;
 
 .hidden-menu {
-    @include container-default;
-    width: 100%;
-    height: 100vh;
-    min-height: 568px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: $color-background;
-    z-index: 1;
-    animation: menu-fade-in-out 250ms;
+  @include container-default;
+  width: 100%;
+  height: 100vh;
+  min-height: 568px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-background;
+  z-index: 1;
+  animation: menu-fade-in-out 250ms;
 
-    &__btn {
-        position: absolute;
-        top: 32px;
-        right: 0;
-        background-color: transparent;
-        width: 50px;
-        height: 50px;
-        font-size: 2rem;
-        font-weight: 700;
-        border: 5px solid $color-text;
-        border-radius: 50%;
-        margin: $pg-padding-mobile;
+  &__btn {
+    position: absolute;
+    top: 32px;
+    right: $pg-padding-mobile;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
 
-        @include tablet {
-            top: 28px;
-            margin: $pg-padding-tablet;
-        }
+    border: none;
+    border-radius: 50%;
+
+    & > svg {
+      width: 100%;
+      height: 100%;
     }
 
-    &__nav {
-        @include content-default;
-        height: calc(100vh - 115px);
-        margin-top: 115px;
-
+    @include tablet {
+      top: 28px;
+      margin: $pg-padding-tablet;
     }
+  }
 
-    &__items {
-        text-align: end;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+  &__nav {
+    @include content-default;
+    height: calc(100vh - 115px);
+    margin-top: 115px;
+  }
+
+  &__items {
+    text-align: end;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__item {
+    width: 50%;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      width: 25%;
     }
+  }
 
-    &__item {
-        width: 50%;
-        margin-bottom: 2rem;
+  &__link {
+    display: block;
+    color: $color-text;
+    text-decoration: none;
+    padding: 1.5rem 0;
+    border-left: 3px solid $color-background;
+    border-bottom: 3px solid $color-background;
 
-        @include tablet {
-            width: 25%;
-        }
+    &--active {
+      padding-right: 1rem;
+      border-left: 3px solid $color-text;
+      border-bottom: 3px solid $color-text;
+
+      &::after {
+        content: "-";
+        margin-left: 0.5rem;
+      }
     }
-
-    &__link {
-        display: block;
-        color: $color-text;
-        text-decoration: none;
-        padding: 1.5rem 0;
-        border-left: 3px solid $color-background;
-        border-bottom: 3px solid $color-background;
-
-        &--active {
-            padding-right: 1rem;
-            border-left: 3px solid $color-text;
-            border-bottom: 3px solid $color-text;
-
-            &::after {
-                content: "-";
-                margin-left: 0.5rem;
-            }
-        }
-    }
+  }
 }
 
 @keyframes menu-fade-in-out {
-    from {opacity: 0;}
-    to {opacity: 1;}   
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
