@@ -19,7 +19,7 @@ function HiddenMenu({ menuActive, setMenuActive }) {
       </button>
       <nav className="hidden-menu__nav">
         <ul className="hidden-menu__items">
-          <li className="hidden-menu__item">
+          <li>
             <NavLink
               exact
               to={homeURL}
@@ -30,7 +30,7 @@ function HiddenMenu({ menuActive, setMenuActive }) {
               HOME
             </NavLink>
           </li>
-          <li className="hidden-menu__item">
+          <li>
             <NavLink
               exact
               to={aboutURL}
@@ -41,7 +41,7 @@ function HiddenMenu({ menuActive, setMenuActive }) {
               ABOUT ME
             </NavLink>
           </li>
-          <li className="hidden-menu__item">
+          <li>
             <NavLink
               exact
               to={contactMeURL}
