@@ -1,9 +1,32 @@
 @use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
 .hamburger-menu {
-    width: 50px;
+  //   width: 60px;
 
-    @include desktop {
-        display: none;
+  @include desktop {
+    display: none;
+  }
+
+  &__open-btn {
+    width: 82px;
+    height: 82px;
+    background-color: transparent;
+    border: none;
+    transition: rotate 175ms ease-in-out;
+
+    & > svg {
+      width: 100%;
+      height: 100%;
+      fill: $color-text;
     }
+  }
+}
+
+.rotate90 {
+  rotate: 90deg;
+}
+
+.rotate00 {
+  rotate: 0deg;
 }
