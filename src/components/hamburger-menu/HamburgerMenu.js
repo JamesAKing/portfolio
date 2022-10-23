@@ -5,7 +5,7 @@ import HiddenMenu from "./HiddenMenu";
 import { IoIosMenu } from "react-icons/io";
 
 function HamburgerMenu() {
-  const [menuActive, setMenuActive] = useState(true);
+  const [menuActive, setMenuActive] = useState(false);
 
   useEffect(() => {
     /** Prevent body from scrolling when modal is open */
