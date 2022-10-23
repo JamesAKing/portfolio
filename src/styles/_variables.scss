@@ -5,16 +5,16 @@ $screen-desktop: 1280px;
 
 $pg-padding-mobile: 1rem;
 $pg-padding-tablet: 1.5rem;
-$pg-padding-desktop: auto;
+$pg-padding-desktop: $pg-padding-tablet;
 
 // DEFAULT VALUES
 $header-height: 150px;
 
 // COLOURS
-$color-background: #FFD400;
+$color-background: #ffd400;
 $color-background-alt: #555555;
 $color-text: #322d31;
 $color-text-alt: #aaaaaa;
 
 // SHADOW
-$shadow-default: 0 0 5px rgba(0, 0, 0, .8);
+$shadow-default: 0 0 5px rgba(0, 0, 0, 0.8);
