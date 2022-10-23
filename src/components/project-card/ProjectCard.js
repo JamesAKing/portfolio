@@ -62,9 +62,9 @@ function ProjectCard({ project, handleDisplayModal }) {
               id={projectTitle}
               className="project-card__icon"
               src={projectLogo}
-              alt={`Please reach out for more informationon ${projectTitle}`}
+              alt={`Please reach out for more information on this project`}
             />
-            <p>Please reach out for more informationon this project</p>
+            <p>Please reach out for more information on this project</p>
           </div>
         )}
       </div>
