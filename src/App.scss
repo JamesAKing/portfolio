@@ -13,6 +13,13 @@
   line-height: 1.5;
 }
 
+html,
+body,
+#next {
+  min-height: 100%;
+  min-height: calc(100 * var(--vh));
+}
+
 body {
   color: $color-text;
 }

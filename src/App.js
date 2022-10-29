@@ -20,15 +20,25 @@ import {
 } from "./utilities/URLS";
 
 function App() {
-  // useEffect(() => {
-  //   // Broswer height fix not curently working.
-  //   if (typeof window === undefined) return console.error('Window is not defined');
+  useEffect(() => {
+    function setHeight() {
+      const pixelHeight = window.innerHeight / 100;
+      const root = document.querySelector(":root");
 
-  //   const pixelHeight = window.innerHeight / 100;
-  //   const root = document.querySelector(':root');
+      if (root) root.style.setProperty("--vh", `${pixelHeight}px`);
+    }
+    // Broswer height fix not curently working.
+    if (typeof window === undefined)
+      return console.error("Window is not defined");
 
-  //   if (root) root.style.setProperty('--vh', `${pixelHeight}px`);
-  // }, []);
+    setHeight();
+
+    window.addEventListener("resize", setHeight);
+
+    return () => window.removeEventListener("resize", setHeight);
+  }, []);
+
+  useEffect(() => {}, []);
 
   return (
     <div className="App">

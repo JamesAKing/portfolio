@@ -17,7 +17,7 @@
   &__heading {
     text-align: end;
     position: absolute;
-    bottom: 4rem;
+    bottom: 140px;
     right: $pg-padding-mobile;
 
     @include mobile {
@@ -27,10 +27,12 @@
     @include tablet {
       width: auto;
       right: $pg-padding-tablet;
+      bottom: 150px;
     }
 
     @include desktop {
       right: 0;
+      bottom: 64px;
     }
   }
 
