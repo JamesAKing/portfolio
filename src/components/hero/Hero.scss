@@ -2,84 +2,92 @@
 @use "../../styles/variables" as *;
 
 .hero {
-    @include container-default;
-    height: calc(100vh - 150px);
-    min-height: 400px;
-    background-color: $color-background;
-    display: flex;
-    justify-content: center;
+  @include container-default;
+  height: calc(100vh - 150px);
+  min-height: 400px;
+  background-color: $color-background;
+  display: flex;
+  justify-content: center;
 
-    &__content {
-        @include content-default;
-        position: relative;
+  &__content {
+    @include content-default;
+    position: relative;
+  }
+
+  &__heading {
+    text-align: end;
+    position: absolute;
+    bottom: 4rem;
+    right: $pg-padding-mobile;
+
+    @include mobile {
+      width: 60%;
     }
 
-    &__heading {
-        text-align: end;
-        position: absolute;
-        bottom: 4rem;
-        right: $pg-padding-mobile;
-
-        @include mobile {
-            width: 60%;
-        }
-
-        @include tablet {
-            width: auto;
-            right: $pg-padding-tablet;
-        }
-
-        @include desktop {
-            right: 0;
-        }
+    @include tablet {
+      width: auto;
+      right: $pg-padding-tablet;
     }
 
-    &__text {
-        margin-bottom: 0.75rem;
+    @include desktop {
+      right: 0;
+    }
+  }
 
-        @include tablet {
-            margin-bottom: 1.5rem;
-        }
+  &__text {
+    margin-bottom: 0.75rem;
+
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    padding: 0 0.3em;
+    white-space: nowrap;
+    color: $color-background;
+    background-color: $color-text;
+
+    &--animate {
+      animation: text-grow 1s ease-in-out;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $color-text;
+    width: 50%;
+    max-width: 160px;
+    height: 0.25rem;
+
+    &--animate {
+      animation: line-grow 1s ease-in-out;
     }
 
-    &__name {
-        font-weight: 600;
-        padding: 0 .3em;
-        white-space: nowrap;
-        color: $color-background;
-        background-color: $color-text;
-
-        &--animate {
-            animation: text-grow 1s ease-in-out;
-        }
+    @include tablet {
+      left: 0;
+      max-width: none;
     }
-
-    &__line {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background-color: $color-text;
-        width: 50%;
-        max-width: 160px;
-        height: 0.25rem;
-        
-        &--animate {
-            animation: line-grow 1s ease-in-out;
-        }
-
-        @include tablet {
-            left: 0;
-            max-width: none;
-        }
-    }
+  }
 }
 
 @keyframes text-grow {
-    from {width: 0;}
-    to {width: 100%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes line-grow {
-    from {width: 0;}
-    to {width: 50%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
 }

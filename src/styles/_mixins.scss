@@ -2,67 +2,69 @@
 
 // RESP DESIGN
 @mixin mobile {
-    @media (min-width: $screen-mobile) {
-        @content;
-    }
+  @media (min-width: $screen-mobile) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (min-width: $screen-tablet) {
-        @content;
-    }
+  @media (min-width: $screen-tablet) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: $screen-desktop) {
-        @content;
-    }
+  @media (min-width: $screen-desktop) {
+    @content;
+  }
 }
 
 // PAGE DEFAULTS
 @mixin page-default {
-    // USE ON PAGE COMPONENTS ONLY
-    width: 100%;
-    min-width: $screen-mobile;
-    min-height: calc(100vh - #{$header-height});
-    min-height: calc(var(--vh) - #{$header-height}); // Fix for Mobile Browser Height
+  // USE ON PAGE COMPONENTS ONLY
+  width: 100%;
+  min-width: $screen-mobile;
+  min-height: calc(100vh - #{$header-height});
+  min-height: calc(
+    var(--vh) - #{$header-height}
+  ); // Fix for Mobile Browser Height
 }
 
 @mixin container-default {
-    // USE FOR CONTENT WITHIN PAGE COMPONENTS
+  // USE FOR CONTENT WITHIN PAGE COMPONENTS
 
-    @include mobile {
-        padding-left: $pg-padding-mobile;
-        padding-right: $pg-padding-mobile;
-    } 
+  @include mobile {
+    padding-left: $pg-padding-mobile;
+    padding-right: $pg-padding-mobile;
+  }
 
-    @include tablet {
-        padding-left: $pg-padding-tablet;
-        padding-right: $pg-padding-tablet;
-    }
+  @include tablet {
+    padding-left: $pg-padding-tablet;
+    padding-right: $pg-padding-tablet;
+  }
 
-    @include desktop {
-        padding-left: $pg-padding-desktop;
-        padding-right: $pg-padding-desktop;
-    }
+  @include desktop {
+    padding-left: $pg-padding-desktop;
+    padding-right: $pg-padding-desktop;
+  }
 }
 
 @mixin container-height-default {
-    min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 150px);
 }
 
 @mixin content-default {
-    width: 100%;
+  width: 100%;
 
-    @include desktop {
-        max-width: 800px;
-    }
+  @include desktop {
+    max-width: 800px;
+  }
 }
 
 @mixin absolute-fill {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom :0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

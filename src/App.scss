@@ -17,10 +17,6 @@ body {
   color: $color-text;
 }
 
-body .hidden-Menu.slideInRightslideInRight {
-  background-color: red;
-}
-
 .App {
   @include page-default;
 }
