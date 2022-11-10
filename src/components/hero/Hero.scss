@@ -1,6 +1,8 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
+$radius: 1.5px;
+
 .hero {
   @include container-default;
   height: calc(100vh - 150px);
@@ -8,6 +10,31 @@
   background-color: $color-background;
   display: flex;
   justify-content: center;
+  background-image: radial-gradient(
+    circle at $radius $radius,
+    $color-text $radius,
+    transparent 0
+  );
+  background-size: 30px 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 150px,
+      $color-background 150px,
+      rgba(0, 0, 0, 0) 55%
+    );
+
+    @include tablet {
+      background-image: none;
+      background-color: $color-background;
+      clip-path: polygon(25% 100%, 100% 100%, 100% 25%);
+    }
+  }
 
   &__content {
     @include content-default;
@@ -15,10 +42,19 @@
   }
 
   &__heading {
+    z-index: 2;
     text-align: end;
     position: absolute;
     bottom: 125px;
     right: $pg-padding-mobile;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      inset: -10% -5%;
+      background-color: $color-background;
+    }
 
     @include mobile {
       width: 60%;
