@@ -18,10 +18,10 @@ $radius: 1.5px;
   background-size: 30px 30px;
 
   &::before {
+    pointer-events: none;
     content: "";
     position: absolute;
     inset: 0;
-
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 150px,

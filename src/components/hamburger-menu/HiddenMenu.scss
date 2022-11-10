@@ -3,7 +3,7 @@
 
 .hidden-menu {
   @include container-default;
-  z-index: 2;
+  z-index: 3;
   position: fixed; // stops modal from scrolling with page on scroll
   width: calc(100% - 20px);
   height: 100vh;
