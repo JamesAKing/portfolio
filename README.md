@@ -21,9 +21,9 @@ This site is consistently being worked on, with a focus on new features and impr
 
 ## Demo
 
-This project has been deployed using Heroku and should be usable on all browsers 
+This project has been deployed using Firebase hosting and should be usable on all browsers 
 The live version of my site can be found here: 
-[Currently not live]
+[https://james--king.co.uk/](https://james--king.co.uk/)
 
 ## Technologies
 
