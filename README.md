@@ -1,5 +1,3 @@
-# Currently under maintenance
-
 # James King's Portfolio
 
 ## Table of Contents
