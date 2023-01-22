@@ -3,8 +3,8 @@ import React, { useState, useRef, useEffect } from "react";
 
 function HexagonGraphic() {
   const containerRef = useRef(null);
+
   const [isVisible, setIsVisable] = useState(false);
-  // const [ animated, setAnimated ] = useState(false)
 
   const callback = (entries) => {
     const [entry] = entries;

@@ -44,6 +44,8 @@ function App() {
           <Route exact path={homeURL} component={HomePage} />
           <Route path={aboutURL} component={AboutPage} />
           <Route path={contactMeURL} component={ContactMePage} />
+
+          {/* <Route path={"/test"} component={TestPage} /> */}
         </Switch>
 
         <Footer />
