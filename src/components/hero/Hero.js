@@ -11,6 +11,8 @@ function Hero() {
   };
 
   useEffect(() => {
+    const observedElement = containerRef.current;
+
     const options = {
       root: null,
       rootMargin: "0px",
@@ -18,10 +20,10 @@ function Hero() {
     };
 
     const observer = new IntersectionObserver(callback, options);
-    if (containerRef.current) observer.observe(containerRef.current);
+    if (observedElement) observer.observe(observedElement);
 
     return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
+      if (observedElement) observer.unobserve(observedElement);
     };
   }, [containerRef]);
 
