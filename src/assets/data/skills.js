@@ -5,23 +5,12 @@ import CSSIcon from "../icons/css3.svg";
 import ExpressIcon from "../icons/express.svg";
 import JavaScriptIcon from "../icons/javascript.svg";
 import NodeIcon from "../icons/nodedotjs.svg";
-// import PythonIcon from "../icons/python.svg";
-// import ReduxIcon from "../icons/redux.svg";
 import NextIcon from "../icons/nextdotjs.svg";
-// import TensorFlowIcon from "../icons/tensorflow.svg";
-import MySQLIcon from "../icons/mysql.svg";
-// import GitIcon from "../icons/git.svg";
 import GithubIcon from "../icons/github-alt.svg";
-// import HerokuIcon from "../icons/heroku.svg";
-// import NPMIcon from "../icons/npm.svg";
-// import WebpackIcon from "../icons/webpack.svg";
 import SassIcon from "../icons/sass.svg";
 import BEMIcon from "../icons/BEM.svg";
-// import OAuthIcon from "../icons/oauth.svg";
 import AuthIcon from "../icons/authentication.svg";
 import APIsIcon from "../icons/apis.svg";
-// import DockerIcon from "../icons/docker.svg";
-// import DOMIcon from "../icons/dom.svg";
 import RespDesignIcon from "../icons/responsive-design.svg";
 import AwsIcon from "../icons/amazonaws.svg";
 import FirebaseIcon from "../icons/firebase.svg";
@@ -106,46 +95,17 @@ export const skillsObjIndustry = {
       skill: "Firebase",
       icon: FirebaseIcon,
     },
-    // {
-    //   skill: "git",
-    //   icon: GitIcon,
-    // },
+
     {
       skill: "github",
       icon: GithubIcon,
     },
-    // {
-    //   skill: " REST api's",
-    //   icon: APIsIcon,
-    // },
-    // {
-    //     skill : 'web api\'s',
-    //     icon : APIsIcon
-    // },
-    // {
-    //   skill: "heroku",
-    //   icon: HerokuIcon,
-    // },
-    // {
-    //   skill: "document object model",
-    //   icon: DOMIcon,
-    // },
-    // {
-    //   skill: "npm",
-    //   icon: NPMIcon,
-    // },
-    // {
-    //   skill: "webpack",
-    //   icon: WebpackIcon,
-    // },
+
     {
       skill: "user authentication",
       icon: AuthIcon,
     },
-    // {
-    //   skill: "OAuth",
-    //   icon: OAuthIcon,
-    // },
+
     {
       skill: "scss",
       icon: SassIcon,
@@ -158,9 +118,5 @@ export const skillsObjIndustry = {
       skill: "responsive design",
       icon: RespDesignIcon,
     },
-    // {
-    //   skill: "docker",
-    //   icon: DockerIcon,
-    // },
   ],
 };
