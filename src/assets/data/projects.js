@@ -1,10 +1,19 @@
 import CubyFiIcon from "../project-icons/cuby-fi.svg";
 import UberEastZooLogo from "../project-icons/ubereats.svg";
+import YCKLanewaysMapLogo from "../project-icons/yck.svg";
 import SecretIcon from "../icons/secret.svg";
 
 import { myGithubURL } from "../../utilities/URLS";
 
 export const projectsArr = [
+  {
+    projectTitle: "YCK Laneways Map",
+    projectDesc: null,
+    projectLogo: YCKLanewaysMapLogo,
+    githubURL: null,
+    websiteURL: "https://ycklanewaysmap.com.au/",
+    projectVideo: null,
+  },
   {
     projectTitle: "Uber Eats Zoo",
     projectDesc: null,
