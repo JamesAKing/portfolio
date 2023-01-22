@@ -1,25 +1,20 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-
 .projects-home {
-    @include container-default;
-    @include container-height-default;
-    background-color: $color-text;
+  @include container-default;
+  @include container-height-default;
+  background-color: $color-text;
 
-    @include desktop {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    &__text {
-        text-align: center;
-        color: $color-background-alt;
-        padding-bottom: 2rem;
-
-        @include tablet {
-            margin-bottom: 2.5rem;
-        }
-    }
+  &__text {
+    text-align: center;
+    color: $color-background-alt;
+    padding-bottom: 2rem;
+  }
 }
