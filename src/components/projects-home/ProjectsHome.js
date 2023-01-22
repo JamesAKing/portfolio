@@ -11,7 +11,7 @@ function ProjectsHome() {
       <p className="projects-home__text">WONDERING WHAT I DO WITH MY TIME?</p>
       <ProjectCards />
       <p className="projects-home__text">
-        Due to the nature of the work, I am unable to share code for all
+        Due to the nature of my work, I am unable to share code for all
         projects. If you have any questions regarding the above projects, please
         feel free to{" "}
         <Link
